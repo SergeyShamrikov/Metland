@@ -18,12 +18,13 @@
 
         <!-- Libs CSS
         ============================================ -->
-        
+        <link rel="stylesheet" href="plugins/arcticmodal/jquery.arcticmodal-0.3.css">
+        <link rel="stylesheet" href="plugins/owl.carousel/owl.carousel.css">
         
 
         <!-- Favicon
         ============================================ -->
-        <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico">
+        <!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
 
         <!-- Theme CSS
         ============================================ -->
@@ -58,57 +59,56 @@
 
         <header id="header">
             
-            <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
 
             <div class="container">
-              <div class="logo">
-                <a href="index.html" title="Home Page">
-                  HomeStyle
-                    <img src="images/logo.png" alt="">
-                  </a>
-              </div>
 
-              <div class="heder_box_2">
-                <p><b>315</b> человек записалось сегодня</p>
-                <span></span>
-                <div class="people_add">
-                  <div class="treug"></div>
-                  <a href=""><img src="images/people_add_icon.png" height="48" width="48" alt=""></a>
-                  <p><strong>Андрей Скороход</strong> записался
-                      на семинар только что</p>
+                <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+
+                <div class="logo">
+                    <a href="index.html" title="Home Page">
+                        HomeStyle
+                        <img src="images/logo.png" alt="">
+                    </a>
                 </div>
-              </div>
-              <div class="header_button_box">
-                <a href="" class="yellow_button sm_button header_button">Записаться</a>
-              </div>
-              <div class="heder_box_1">
-                <p>Только сегодня <strong>бесплатный</strong> семинар</p>
-                <span></span>
-              </div>
-              
+
+                <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+
+                <div class="header_reg alignright">
+
+                    <div class="heder_box_1">
+                    
+                        <p>Только сегодня <strong>бесплатный</strong> семинар</p>
+                        <span></span>
+                    
+                    </div>
+                    
+                    <div class="header_button_box">
+                        <a href="" class="yellow_button sm_button header_button modal_btn" data-modal="entry_webinar">Записаться</a>
+                    </div>
+                                  
+                    <div class="heder_box_2">
+                    
+                        <p><b>315</b> человек записалось сегодня</p>
+                    
+                        <span></span>
+                    
+                        <div class="people_add">
+                    
+                            <div class="treug"></div>
+                    
+                            <a href=""><img src="images/people_add_icon.png" height="48" width="48" alt=""></a>
+                    
+                            <p><strong>Андрей Скороход</strong> записался
+                              на семинар только что</p>
+                    
+                        </div>
+                    
+                    </div>
+
+                </div>
 
             </div>
-<!-- 
-            <div id="logo">
 
-                <div data-id2="section1">
-                  <a href="index.html" title="Home Page">
-                  HomeStyle
-                    <img src="images/logo.png" alt="">
-                  </a>
-                </div>
-                <div data-id2="section2">2</div>
-                <div data-id2="section3">3</div>
-                <div data-id2="section4">4</div>
-                <div data-id2="section5">5</div>
-                <div data-id2="section6">6</div>
-                <div data-id2="section7">7</div>
-                <div data-id2="section8">8</div> 
-
-            </div>
--->
-             
-            <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
              
         </header>
 
@@ -120,34 +120,44 @@
 
             <ul id="navigation">
 
-                <li data-id="section1" class="point_1 current">1</li>
                 <li data-id="section2">
+
                   <img src="images/navigation_icon_1.png" height="42" width="42" alt="">
+
                   <span>Metland <br>научим языку</span>
+
                   <em></em>
+
                 </li>
+
                 <li data-id="section3">
                   <img src="images/navigation_icon_2.png" height="42" width="42" alt="">
-                  <span class="one_line">Metland</span>
+                  <span>Metland</span>
                   <em></em>
                 </li>
+
                 <li data-id="section4">
+
                   <img src="images/navigation_icon_3.png" height="42" width="42" alt="">
                   <span>Metland <br>научим языку</span>
                   <em></em>
+
                 </li>
+
                 <li data-id="section5">
+
                   <img src="images/navigation_icon_4.png" height="42" width="42" alt="">
                   <span>Metland <br>научим языку</span>
                   <em></em>
+
                 </li>
+
                 <li data-id="section6">
+
                   <img src="images/navigation_icon_5.png" height="42" width="42" alt="">
                   <span>Metland <br>научим языку</span>
                   
                 </li>
-                <li data-id="section7" class="point_off">7<!-- Здесь должен быть твой код Паша --></li>
-                <li data-id="section8" class="point_off">8<!-- Здесь должен быть твой код Паша --></li>
 
             </ul>
 
@@ -161,7 +171,7 @@
             
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section1" class="section_content" data-text="Название следующего слайда 1">
+            <div id="section1" class="section_content" data-hide="hide_header_btn hide_nav" data-text="Название следующего слайда 1">
                 
                 <div class="section_content_inner blue_bg blue_bg_2">
                     <span class="big_ben"></span>
@@ -169,52 +179,80 @@
                         
                         <div class="container">
 
-                            <div class="box_1">
-                              <div class="box_1_left">
-                                <h2>Как учить до <strong>100 слов</strong> в день и выучить английский за <strong>6 месяцев</strong> по уникальной методике <strong>Metland!</strong></h2>
-                                <ul class="method">
-                                  <li>
-                                    <img src="images/box_1_icon_1.png" height="64" width="64" alt="">
-                                    <p><strong>Гарантия</strong> результата <br><span>Педагоги постоянно повышают квалификацию в Лондоне</span></p>
-                                  </li>
-                                  <li>
-                                    <img src="images/box_1_icon_2.png" height="64" width="64" alt="">
-                                    <p><strong>Игровая</strong> форма <br><span>Педагоги постоянно повышают квалификацию в Лондоне</span></p>
-                                  </li>
-                                  <li>
-                                    <img src="images/box_1_icon_3.png" height="64" width="64" alt="">
-                                    <p><strong>Мощная</strong> мотивация <br><span>Педагоги постоянно повышают квалификацию в Лондоне</span></p> 
+                            <div class="row">
+                                
+                                <div class="col-sm-8">
 
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="box_1_right">
+                                    <h2 class="wow fadeInLeftBig" data-wow-delay="0.3s">Как учить до <strong>100 слов</strong> в<br> день и выучить английский<br> за <strong>6 месяцев</strong> по уникальной<br> методике <strong>Metland!</strong></h2>
 
-                                <div class="box_1_right_ins">
-                                  <div class="box_1_right_ins_cont">
-                                    <h4 class="align_center">Запишись на <br> <strong>бесплатный</strong> <br> вебинар сейчас</h4>
-                                    <a href="" class="yellow_button">Записаться</a>
-                                    <div class="persons_number">
-                                      <span class="persons_number_poz_1">3</span>
-                                      <span class="persons_number_poz_2">1</span>
-                                      <span class="persons_number_poz_3">5</span>
-                                      <div class="clear"></div>
-                                    </div>
-                                    <div class="align_center">
-                                      <p>человек записалось сегодня</p>
-                                    </div>
-                                    <div class="add_persons_number">
-                                      <img src="images/add_persons_number_icon.png" height="48" width="48" alt="">
-                                      <p><strong>Андрей Скороход</strong> записался <br>на семинар только что</p>
-                                    </div>
-                                  </div>
+                                    <ul class="method">
 
+                                        <li class="wow fadeInLeftBig" data-wow-delay="0.5s">
+
+                                            <img src="images/box_1_icon_1.png" height="64" width="64" alt="">
+                                            <p><strong>Гарантия</strong> результата <br><span>Педагоги постоянно повышают квалификацию в Лондоне</span></p>
+
+                                        </li>
+
+                                        <li class="wow fadeInLeftBig" data-wow-delay="0.7s">
+
+                                            <img src="images/box_1_icon_2.png" height="64" width="64" alt="">
+                                            <p><strong>Игровая</strong> форма <br><span>Педагоги постоянно повышают квалификацию в Лондоне</span></p>
+                                            
+                                        </li>
+
+                                        <li class="wow fadeInLeftBig" data-wow-delay="0.9s">
+
+                                            <img src="images/box_1_icon_3.png" height="64" width="64" alt="">
+                                            <p><strong>Мощная</strong> мотивация <br><span>Педагоги постоянно повышают квалификацию в Лондоне</span></p> 
+
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="box_1_right_bg"><img src="images/box_1_right_bg.jpg" alt=""></div>
-                              </div>
-                              <div class="clear"></div>
+
+                                <div class="col-sm-4">
+                                    
+
+                                    <div class="p_rel wow fadeInRightBig" data-wow-delay="1s">
+                                    
+                                        <div class="box_1_right_ins_cont">
+                                    
+                                            <h4 class="align_center">Запишись на <br> <strong>бесплатный</strong> <br> вебинар сейчас</h4>
+                                    
+                                            <a href="" class="yellow_button modal_btn" data-modal="entry_webinar">Записаться</a>
+                                    
+                                            <div class="persons_number">
+                                    
+                                                <span class="persons_number_poz_1">3</span>
+                                                <span class="persons_number_poz_2">1</span>
+                                                <span class="persons_number_poz_3">5</span>
+                                                <div class="clear"></div>
+                                    
+                                            </div>
+                                    
+                                            <div class="align_center">
+                                    
+                                                <p>человек записалось сегодня</p>
+                                    
+                                            </div>
+                                    
+                                            <div class="add_persons_number">
+                                    
+                                                <img src="images/add_persons_number_icon.png" height="48" width="48" alt="">
+                                                <p><strong>Андрей Скороход</strong> записался <br>на семинар только что</p>
+                                    
+                                            </div>
+                                    
+                                        </div>
+                                    
+                                        <div class="box_1_right_bg"><img src="images/box_1_right_bg.jpg" alt=""></div>
+                                        
+                                        </div>
+
+                                    </div>
+
                             </div>
-                        
+
                         </div>
 
                     </div>
@@ -227,7 +265,7 @@
 
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section2" class="section_content" data-text="Название следующего слайда 2">
+            <div id="section2" class="section_content" data-hide="" data-text="Название следующего слайда 2">
                 
                 <div class="section_content_inner dirtygreen_bg">
                     
@@ -238,14 +276,14 @@
                             <div class="box_2">
                               <div class="row">
                                 <div class="col-md-6">
-                                  <h3>Как проходит вебинар</h3>
+                                  <h3 class="wow fadeInLeftBig" data-wow-delay="0.3s">Как проходит вебинар</h3>
                                   <ul class="box_ul">
-                                    <li>Нас много</li>
-                                    <li>В удобное время</li>
-                                    <li>Записываем копию</li>
-                                    <li>Видео доступно из любой точки мира</li>
-                                    <li>Достаточно даже медленного интернета</li>
-                                    <li>Все очень круто</li>
+                                    <li class="wow fadeInLeftBig" data-wow-delay="0.5s">Нас много</li>
+                                    <li class="wow fadeInLeftBig" data-wow-delay="0.6s">В удобное время</li>
+                                    <li class="wow fadeInLeftBig" data-wow-delay="0.7s">Записываем копию</li>
+                                    <li class="wow fadeInLeftBig" data-wow-delay="0.8s">Видео доступно из любой точки мира</li>
+                                    <li class="wow fadeInLeftBig" data-wow-delay="0.9s">Достаточно даже медленного интернета</li>
+                                    <li class="wow fadeInLeftBig" data-wow-delay="1s">Все очень круто</li>
                                   </ul>
                                 </div>
                                 <div class="col-md-6 box_2_img">
@@ -253,7 +291,7 @@
                                     
                                   </div> -->
                                   
-                                   <img src="images/photo_frame.png" width="555" alt=""> 
+                                   <img src="images/photo_frame.png" width="555" alt="" class="wow fadeInRightBig" data-wow-delay="1s"> 
                                 </div>
                               </div>
                               <div class="clear"></div>
@@ -271,7 +309,7 @@
 
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section3" class="section_content" data-text="Название следующего слайда 3">
+            <div id="section3" class="section_content" data-hide="" data-text="Название следующего слайда 3">
                 
                 <div class="section_content_inner purple_bg">
                     
@@ -282,12 +320,14 @@
                             <div class="box_3">
                               <div class="row">
                                 <div class="col-md-7">
-                                  <h3>О нас</h3>
-                                  <p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
-                                  <p>Равным образом сложившаяся структура организации представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
+                                  <h3 class="wow fadeInLeftBig" data-wow-delay="0.3s">О нас</h3>
+                                  <p class="wow fadeInLeftBig" data-wow-delay="0.5s">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+                                  <p class="wow fadeInLeftBig" data-wow-delay="0.7s">Равным образом сложившаяся структура организации представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
                                 </div>
+
                                 <div class="col-md-5 box_3_img">
-                                   <img src="images/box_3_video.jpg"  width="455" alt="">
+
+                                   <a href="#" class="modal_btn wow fadeInRightBig" data-wow-delay="0.9s" data-modal="video" data-src="https://www.youtube.com/embed/o4jo3MqKN_k"><img src="images/box_3_video.jpg"  width="455" alt=""></a>
 
                                   <!-- <iframe width="455" height="290" src="https://www.youtube.com/embed/pRRSve0tIV0" frameborder="0" allowfullscreen></iframe> -->
 
@@ -298,27 +338,63 @@
                               <div class="showing_box">
 
                                 <div class="row">
-                                    <div class="col-md-3">
-                                      <img src="images/showing_icon_1.png" height="53" width="60" alt="">
-                                      <span>1456</span>
-                                      <p>Довольных
-                                        клиентов</p>
+
+                                    <div class="col-md-3 wow fadeInLeftBig" data-wow-delay="1.5s">
+
+                                        <img src="images/showing_icon_1.png" height="53" width="60" alt="">
+                                                  
+                                        <div class="counter_item">
+                                            
+                                            <div class="counter" data-amount="1456"></div>
+                                            
+                                        </div>
+                                            
+                                        <p>Довольных клиентов</p>
+
                                     </div>
-                                    <div class="col-md-3">
-                                      <img src="images/showing_icon_2.png" height="53" width="79" alt="">
-                                      <span>145</span>
-                                      <p>Уроков</p>
+
+                                    <div class="col-md-3 wow fadeInLeftBig" data-wow-delay="1.3s">
+
+                                        <img src="images/showing_icon_2.png" height="53" width="79" alt="">
+                                              
+                                        <div class="counter_item">
+                                            
+                                            <div class="counter" data-amount="145"></div>
+                                            
+                                        </div>
+                                            
+                                        <p>Уроков</p>
+
                                     </div>
-                                    <div class="col-md-3">
-                                      <img src="images/showing_icon_3.png" height="53" width="70" alt="">
-                                      <span>4</span>
-                                      <p>Курса</p>
+
+                                    <div class="col-md-3 wow fadeInLeftBig" data-wow-delay="1.1s">
+
+                                        <img src="images/showing_icon_3.png" height="53" width="70" alt="">
+                                              
+                                        <div class="counter_item">
+                                            
+                                            <div class="counter" data-amount="4"></div>
+                                            
+                                        </div>
+                                            
+                                        <p>Курса</p>
+
                                     </div>
-                                    <div class="col-md-3">
-                                      <img src="images/showing_icon_4.png" height="57" width="40" alt="">
-                                      <span>15</span>
-                                      <p>Учителей</p>
+
+                                    <div class="col-md-3 wow fadeInLeftBig" data-wow-delay="0.9s">
+
+                                        <img src="images/showing_icon_4.png" height="57" width="40" alt="">
+                                              
+                                        <div class="counter_item">
+                                            
+                                            <div class="counter" data-amount="15"></div>
+                                            
+                                        </div>
+                                            
+                                        <p>Учителей</p>
+
                                     </div>
+
                                   </div>
                                 
                               </div>
@@ -337,7 +413,7 @@
 
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section4" class="section_content" data-text="Название следующего слайда 4">
+            <div id="section4" class="section_content" data-hide="" data-text="Название следующего слайда 4">
                 
                 <div class="section_content_inner pink_bg">
                     
@@ -348,17 +424,17 @@
                           <div class="box_4">
                             <div class="row">
                               <div class="col-md-12">
-                                <h3>Причины пройти бесплатный курс</h3>
+                                <h3 class="wow fadeInLeftBig" data-wow-delay="0.3s">Причины пройти бесплатный курс</h3>
                                 <ul class="box_ul">
-                                  <li>Научим этому и тому</li>
-                                  <li>Как учить 100 слов в день</li>
-                                  <li>Снимем страх общаться с первых занятий</li>
-                                  <li>Вы узнаете как быстро можно разобраться в сложных и запутанных английских временах</li>
+                                  <li class="wow fadeInLeftBig" data-wow-delay="0.5s">Научим этому и тому</li>
+                                  <li class="wow fadeInLeftBig" data-wow-delay="0.6s">Как учить 100 слов в день</li>
+                                  <li class="wow fadeInLeftBig" data-wow-delay="0.7s">Снимем страх общаться с первых занятий</li>
+                                  <li class="wow fadeInLeftBig" data-wow-delay="0.8s">Вы узнаете как быстро можно разобраться в сложных и запутанных английских временах</li>
                                 </ul>
                                 <br>
                                 <div  class="align_center">
-                                  <h5>Попробуйте наш курс на бесплатном вебинаре:</h5>
-                                  <a href="" class="yellow_button sm_button">Записаться</a>
+                                  <h5 class="wow bounceInUp" data-wow-delay="1s">Попробуйте наш курс на бесплатном вебинаре:</h5>
+                                  <a href="" class="yellow_button sm_button modal_btn wow bounceInUp" data-wow-delay="1.2s" data-modal="entry_webinar">Записаться</a>
                                 </div>
                                 </div>
                               </div>
@@ -375,7 +451,7 @@
 
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section5" class="section_content" data-text="Название следующего слайда 5">
+            <div id="section5" class="section_content" data-hide="" data-text="Название следующего слайда 5">
                 
                 <div class="section_content_inner lightblue_bg">
                     
@@ -384,108 +460,144 @@
                        <div class="container">
                             
                           <div class="box_5">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <h3>Отзывы</h3>
+
+                            <h3>Отзывы</h3>
+
+                            <div class="owl-carousel">
                                 
-                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                </ol>
-
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner" role="listbox">
-                                  <div class="item active">
-
-                                    <div class="reviews_box">
-
-                                      <ul>
+                                <div>
+                                    
+                                    <ul class="reviews_box">
                                         <li>
-                                          <div class="reviews_frame">
-                                            <span></span>
-                                            <img src="images/carousel_img_1.jpg" height="93" width="133" alt="">
-                                          </div>
-                                          <p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                                            <div class="reviews_frame">
+                                                <span></span>
+                                                <img src="images/carousel_img_1.jpg" height="93" width="133" alt="">
+                                            </div>
+                            
+                                            <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
                                         </li>
+                            
                                         <li>
-                                          <div class="reviews_frame">
-                                            <span></span>
-                                            <img src="images/carousel_img_1-02.jpg" height="103" width="133" alt="">
-                                          </div>
-                                          <p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
+                                                <div class="reviews_frame">
+                                                    <span></span>
+                            
+                                                    <a href="#" class="modal_btn" data-modal="video" data-src="https://www.youtube.com/embed/o4jo3MqKN_k">
+                                                        <img src="images/carousel_img_1-02.jpg" height="103" width="133" alt="">
+                                                    </a>
+                            
+                                                </div>
+                            
+                                                <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
                                         </li>
-                                      </ul>
-                                      
-                                    </div>
-
-                                    </div>
-
-
-                                 
-                                  <div class="item">
-                                    <div class="reviews_box">
-
-                                      <ul>
-                                        <li>
-                                          <div class="reviews_frame">
-                                            <span></span>
-                                            <img src="images/carousel_img_1.jpg" height="93" width="133" alt="">
-                                          </div>
-                                          <p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
-                                        </li>
-                                        <li>
-                                          <div class="reviews_frame">
-                                            <span></span>
-                                            <img src="images/carousel_img_1-02.jpg" height="103" width="133" alt="">
-                                          </div>
-                                          <p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
-                                        </li>
-                                      </ul>
-                                      
-                                    </div>
-                                  </div>
-
-                                  <div class="item">
-                                    <div class="reviews_box">
-
-                                      <ul>
-                                        <li>
-                                          <div class="reviews_frame">
-                                            <span></span>
-                                            <img src="images/carousel_img_1.jpg" height="93" width="133" alt="">
-                                          </div>
-                                          <p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
-                                        </li>
-                                        <li>
-                                          <div class="reviews_frame">
-                                            <span></span>
-                                            <img src="images/carousel_img_1-02.jpg" height="103" width="133" alt="">
-                                          </div>
-                                          <p>Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
-                                        </li>
-                                      </ul>
-                                      
-                                    </div>
-                                  </div>
-                                  
+                            
+                                    </ul>
+                            
                                 </div>
+                                
+                                <div>
+                                    
+                                    <ul class="reviews_box">
 
-                                <!-- Controls -->
-                                <a class="prev_button" href="#carousel-example-generic" role="button" data-slide="prev">
-                                  <span class="prev_arrow" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="next_button" href="#carousel-example-generic" role="button" data-slide="next">
-                                  <span class="next_arrow" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                              </div>
+                                        <li>
+                            
+                                                <div class="reviews_frame">
+                                                    <span></span>
+                            
+                                                    <a href="#" class="modal_btn" data-modal="video" data-src="https://www.youtube.com/embed/o4jo3MqKN_k">
+                                                        <img src="images/carousel_img_1-02.jpg" height="103" width="133" alt="">
+                                                    </a>
+                            
+                                                </div>
+                            
+                                                <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
+                                        </li>
+                            
+                                        <li>
+                                            <div class="reviews_frame">
+                                                <span></span>
+                                                <img src="images/carousel_img_1.jpg" height="93" width="133" alt="">
+                                            </div>
+                            
+                                            <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
+                                        </li>
+                            
+                                    </ul>
+                            
+                                </div>
+                                
+                                <div>
+                                    
+                                    <ul class="reviews_box">
 
-                              </div>
+                                        <li>
+                                            <div class="reviews_frame">
+                                                <span></span>
+                                                <img src="images/carousel_img_1.jpg" height="93" width="133" alt="">
+                                            </div>
+                            
+                                            <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
+                                        </li>
+                            
+                                        <li>
+                            
+                                                <div class="reviews_frame">
+                                                    <span></span>
+                            
+                                                    <a href="#" class="modal_btn" data-modal="video" data-src="https://www.youtube.com/embed/o4jo3MqKN_k">
+                                                        <img src="images/carousel_img_1-02.jpg" height="103" width="133" alt="">
+                                                    </a>
+                            
+                                                </div>
+                            
+                                                <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
+                                        </li>
+                            
+                                    </ul>
+                            
+                                </div>
+                                
+                                <div>
+                                    
+                                    <ul class="reviews_box">
+
+                                        <li>
+                            
+                                                <div class="reviews_frame">
+                                                    <span></span>
+                            
+                                                    <a href="#" class="modal_btn" data-modal="video" data-src="https://www.youtube.com/embed/o4jo3MqKN_k">
+                                                        <img src="images/carousel_img_1-02.jpg" height="103" width="133" alt="">
+                                                    </a>
+                            
+                                                </div>
+                            
+                                                <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
+                                        </li>
+                            
+                                        <li>
+                                            <div class="reviews_frame">
+                                                <span></span>
+                                                <img src="images/carousel_img_1.jpg" height="93" width="133" alt="">
+                                            </div>
+                            
+                                            <p class="wrapper">Повседневная практика показывает, что консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации. </p>
+                            
+                                        </li>
+                            
+                                    </ul>
+                            
+                                </div>
+                                
                             </div>
+
                           </div>
 
                         </div>
@@ -500,7 +612,7 @@
 
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section6" class="section_content" data-text="Название следующего слайда 6">
+            <div id="section6" class="section_content" data-hide="hide_next_btn" data-text="Название следующего слайда 6">
                 
                 <div class="section_content_inner red_bg">
                     
@@ -583,7 +695,7 @@
 
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section7" class="section_content" data-text="Название следующего слайда 7">
+            <div id="section7" class="section_content" data-hide="hide_header_btn hide_nav hide_next_btn" data-text="Название следующего слайда 7">
                 
                 <div class="section_content_inner green_bg">
                     
@@ -605,7 +717,7 @@
 
             <!-- - - - - - - - - - - - - - Section Content - - - - - - - - - - - - - - - - -->
 
-            <div id="section8" class="section_content" data-text="Название следующего слайда 8">
+            <div id="section8" class="section_content" data-hide="hide_header_btn hide_nav hide_next_btn" data-text="Название следующего слайда 8">
                 
                 <div class="section_content_inner darkblue_bg">
                     
@@ -629,10 +741,31 @@
 
         <button id="next_slide">
             
+            <span class="next_slide_text"></span>
             <i></i>
-            <p></p>
 
         </button>
+
+        <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
+
+
+        <!-- - - - - - - - - - - - - - Modal Windows - - - - - - - - - - - - - - - - -->
+
+        <div class="hide">
+            
+            <div id="video">
+                
+                <div class="video_box">
+                    
+                    <iframe src=""></iframe>
+
+                </div> 
+
+            </div>
+
+            <div id="entry_webinar" class="pattern_blue"></div>
+
+        </div>
 
         <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
 
@@ -640,18 +773,16 @@
         <!-- Include Libs & Plugins
         ============================================ -->
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="plugins/jquery.smoothscroll.js"></script>
+        <script type="text/javascript" src="plugins/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+        <script type="text/javascript" src="plugins/owl.carousel/owl.carousel.min.js"></script>
 
         <!-- Theme files
         ============================================ -->
         <script src="js/script.core.js"></script>
         <script src="js/script.plugins.js"></script>
-
-
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery-1.11.1.min.js"></script>
-       <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
         
     </body>
 </html>

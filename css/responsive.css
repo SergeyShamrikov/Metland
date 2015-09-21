@@ -11,33 +11,6 @@
   .container {
     width: 1000px;
 }
-   #next_slide{
-        outline: none;
-        position: fixed;
-        z-index: 99;
-        bottom: 22px;
-        left: 50%;
-        width: 38px;
-        height: 38px;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        background:  url(../images/next_slide_arrow.png) 12px 14px no-repeat;
-        -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-        -o-transform: translate(-50%, 0);
-        transform: translate(-50%, 0);
-   }
-      #next_slide:hover {
-        bottom: 12px;
-      }
-      #next_slide:hover p {
-        top: -35px;
-        
-      }
-      #next_slide p {
-      	font-size: 12px;
-      	top: -25px;
-      }
 
 /* ------------------------------------------------
 
@@ -47,6 +20,7 @@
   #header .container {
   	width: 1170px;
   }
+
   header {
     position: fixed;
     width: 100%;
@@ -64,20 +38,11 @@
     -------------------------------------------- */
         
     #navigation {
-    left: 30px;
-}
-#navigation li span {
-    position: absolute;
-    left: 50px;
-    top: 0;
-    font: 12px/21px 'Open Sans', Arial,sans-serif;
-    color: #fff;
-    white-space: nowrap;
-    text-align: left;
-    display: none;
-    vertical-align: middle;
-    height: 42px;
-}
+      left: 30px;
+    }
+    #navigation li span {
+        font-size: 12px;
+    }
 /* ------------------------------------------------
 
     5. Basic Elements
@@ -88,36 +53,30 @@
    -------------------------------------------- */
   h2 {
     font: 300 33px/40px 'Open Sans', Arial,sans-serif;
-    color: #fff;
     padding-bottom: 20px;
   }
    h3 {
     font: 300 40px/40px 'Open Sans', Arial,sans-serif;
-    color: #fff;
     padding-bottom: 30px;
   }
   h4 {
     font: 300 22px/24px 'Open Sans', Arial,sans-serif;
-    color: #fff;
     padding-bottom: 23px;
   }
    h5 {
     font: 300 20px/40px 'Open Sans', Arial,sans-serif;
-    color: #fff;
     padding-bottom: 5px;
   }
    h6 {
     font: 300 36px/36px 'Open Sans', Arial,sans-serif;
-    color: #fff;
     padding-bottom: 18px;
   }
 
   p {
-  color: #fff;
-  font: 16px/20px 'Open Sans', Arial,sans-serif;
-  padding-bottom: 20px;
-  margin: 0;
-}
+    font: 16px/20px 'Open Sans', Arial,sans-serif;
+    padding-bottom: 20px;
+    margin: 0;
+  }
 
    /* --------------------------------------------
         5.2. Lists
