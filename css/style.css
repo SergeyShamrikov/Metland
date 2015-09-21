@@ -15,7 +15,7 @@
     5.3. Buttons
 */
 @import "reset.css";
-@import "bootstrap.min.css";
+@import "bootstrap.css";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 
@@ -234,15 +234,9 @@
   }
  
    .logo{
-    width: 1170px;
-    margin: 0 auto;
+    float: left;
    }
-    .logo>div {
-      display: none;
-    }
-     .logo>.current2 {
-    display: block;
-  }
+
    .logo a{
      display:block;
      width:241px;
@@ -251,7 +245,85 @@
      text-decoration:none;
      text-indent:-9999px;
    }
+  .heder_box_1 {
+    float: right;
+    padding-top: 20px;
+    position: relative;
+  }
+  .heder_box_1 span {
+    width: 124px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    background:  url(../images/header_arrow_1.png) 0 0 no-repeat;
+    top: -9px;
+    right: -25px;
+  }
+  .heder_box_2 {
+    float: right;
+    padding-top: 20px;
+    position: relative;
+    cursor: default;
+  }
+  .heder_box_2 span {
+    width: 47px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    background:  url(../images/header_arrow_2.png) 0 0 no-repeat;
+    top: 45px;
+    left: -28px;
+  }
+  .heder_box_2 b {
+  font-size: 24px;
+  }
+  .header_button_box {
+    float: right; 
+    margin: 0 33px;
+    padding-top: 8px;
+  }
+  .header_button {
+    height: 50px !important;
+    line-height: 50px !important;
+    font-size: 16px !important;
+  }
+
+  .people_add {
+    position: absolute;
+    top: 50px;
+    left: -22px;
+    width: 290px;
+    padding: 13px 10px;
+    background-color: #fff;
+    color: #4e4e4e;
+    font: 14px/21px 'Open Sans', Arial,sans-serif;
+    display: none;
+  }
+  .people_add p {
+    color: #4e4e4e;
+    font: 14px/21px 'Open Sans', Arial,sans-serif;
+    padding: 0;
+    padding-top: 5px;
+  }
+  .people_add  img {
+    margin-right: 10px;
+    float: left;
+  }
+  .treug {
+    position: absolute;
+    content: '';
+    left: 35px;
+    top: -9px;
+    width: 0px;
+    height: 0px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+    }
+    .heder_box_2:hover .people_add {
+    display: block;
     
+    }
     /* --------------------------------------------
         4.1. Main Navigation
     -------------------------------------------- */
@@ -352,13 +424,48 @@
     color: #fff;
     padding-bottom: 35px;
   }
+   h5 {
+    font: 300 30px/60px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+
+  h6 {
+    font: 300 48px/48px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-bottom: 25px;
+  }
   
   p {
   color: #fff;
   font: 16px/24px 'Open Sans', Arial,sans-serif;
   padding-bottom: 25px;
+  margin: 0;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+     margin-top: 0px; 
+     margin-bottom: 0px; 
 }
 
+input[type="text"]{
+  height: 57px;
+  width: 100%;
+    border:none;
+    color:#272727;
+    padding: 0 20px;
+    font: 300 18px/20px 'Open Sans', Arial,sans-serif;
+    color: #272727;
+    -moz-border-radius:4px; /* Firefox */ 
+    -webkit-border-radius:4px; /*Safari and chrome */ 
+    -khtml-border-radius:4px; /*Linux browsers*/
+    border-radius:4px; /*CSS3*/ 
+}
+
+.input_button {
+    height: 60px !important;
+    line-height: 60px !important;
+    font-size: 16px !important;
+}
    /* --------------------------------------------
         5.2. Lists
    -------------------------------------------- */
@@ -368,6 +475,9 @@
         5.3. Buttons
    -------------------------------------------- */
 
+.sm_button {
+  width: auto;
+}
 .yellow_button {
   height: 73px;
   width: 100%;
@@ -384,10 +494,10 @@
   text-align: center;
   text-decoration: none;
   border-bottom: 3px solid #273242;
-    -moz-border-radius:4px 4px 7px 7px; /* Firefox */ 
-    -webkit-border-radius:4px 4px 7px 7px; /*Safari and chrome */ 
-    -khtml-border-radius:4px 4px 7px 7px; /*Linux browsers*/
-    border-radius:4px 4px 7px 7px; /*CSS3*/ 
+    -moz-border-radius:4px 4px 6px 6px; /* Firefox */ 
+    -webkit-border-radius:4px 4px 6px 6px; /*Safari and chrome */ 
+    -khtml-border-radius:4px 4px 6px 6px; /*Linux browsers*/
+    border-radius:4px 4px 6px 6px; /*CSS3*/ 
     outline: none;
 }
 .yellow_button:hover {
@@ -397,6 +507,9 @@
 .yellow_button:active {
   background-color: #ffeb9b;
   text-decoration: none;
+}
+.sm_button {
+  width: auto;
 }
 
 /* --------------------------------------------
@@ -515,26 +628,154 @@
 }
 
 
-.box_2 {
 
-}
-.box_2_left {
-  float: left;
-  width: 560px;
-}
-.box_2_ul li{
+
+.box_ul li{
   padding-left: 36px;
   color: #fff;
   font: 20px/48px 'Open Sans', Arial,sans-serif;
   background:  url(../images/box_2_li_icon.png) 0 14px no-repeat;
 }
-.box_2_right {
-  width: 570px;
-  float: right;
-  padding-top: 10px;
-}
+
 .photo_frame {
   height: 410px;
   width: 570px;
   background:  url(../images/photo_frame.png) 0 0 no-repeat;
 }
+
+
+.showing_box {
+  padding-top: 50px;
+}
+.showing_box .row>div {
+  text-align: center;
+}
+.showing_box img {
+  margin-bottom: 20px;
+}
+.showing_box p {
+  color: #fff;
+  font: 300 30px/30px 'Open Sans', Arial,sans-serif;
+}
+.showing_box span {
+  color: #fff;
+  font: 600 48px/48px 'Open Sans', Arial,sans-serif;
+  display: block;
+}
+
+.prev_button, .next_button {
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  width: 48px;
+  height: 48px;
+}
+.prev_button {
+  left: 0;
+}
+.next_button {
+  right: 0;
+}
+
+.prev_button span , .next_button span {
+  width: 48px;
+  height: 48px;
+  display: block;
+  opacity: 0.5;
+}
+.prev_button span:hover , .next_button span:hover {
+  opacity: 1;
+}
+
+.prev_arrow{
+  background:  url(../images/prev_arrow.png) 0 0 no-repeat;
+}
+.next_arrow {
+  background:  url(../images/next_arrow.png) 0 0 no-repeat;
+}
+.carousel-indicators {
+  bottom: -70px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 6px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    background-color: #fff;
+    border: none;
+}
+
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 0 6px;
+    background-color: #ffcd3a;
+}
+.reviews_frame {
+  position: relative;
+  border: 3px solid #fff;
+  float: left;
+  margin-right: 30px;
+}
+.reviews_frame span {
+  display: block;
+  position: absolute;
+  height: 17px;
+  width: 10px;
+  right: -13px;
+  top: 12px;
+  background:  url(../images/reviews_frame_arrow.png) 0 0 no-repeat;
+}
+
+.reviews_box li {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.item {
+  padding: 0 100px;
+}
+
+.box_6_form {
+  padding-top: 30px;
+  padding-bottom: 85px;
+}
+
+.help_box {
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+.help_box img {
+  float: left;
+  margin-right: 20px;
+}
+.help_box p {
+  color: #fff;
+  font: 300 30px/30px 'Open Sans', Arial,sans-serif;
+  padding: 0;
+}
+.help_box em {
+  color: #fff;
+  font: 300 18px/18px 'Open Sans', Arial,sans-serif;
+}
+.help_box_ins_1 {
+  background:  url(../images/phone_icon.png) 0 5px no-repeat;
+  padding-left: 60px;
+}
+.help_box_ins_2 {
+  background:  url(../images/e-mail_icon.png) 0 5px no-repeat;
+  padding-left: 60px;
+}
+
+.button_50 {
+  width: 300px;
+    height: 50px !important;
+    line-height: 50px !important;
+    font-size: 16px !important;
+    padding: 0 !important;
+  }

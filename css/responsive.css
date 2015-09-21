@@ -1,4 +1,210 @@
 /*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 1650px) {
+ 
+
+ /* ------------------------------------------------
+
+    3. Main
+
+------------------------------------------------ */
+
+  .container {
+    width: 1000px;
+}
+   #next_slide{
+        outline: none;
+        position: fixed;
+        z-index: 99;
+        bottom: 22px;
+        left: 50%;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        background:  url(../images/next_slide_arrow.png) 12px 14px no-repeat;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+   }
+      #next_slide:hover {
+        bottom: 12px;
+      }
+      #next_slide:hover p {
+        top: -35px;
+        
+      }
+      #next_slide p {
+      	font-size: 12px;
+      	top: -25px;
+      }
+
+/* ------------------------------------------------
+
+    4. Header
+
+------------------------------------------------ */
+  #header .container {
+  	width: 1170px;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    padding: 15px 0;
+    background: url(../images/header_bg.png) 0 0 repeat;
+    height: 87px;
+}
+.heder_box_1 span {
+	top: -3px;
+}
+
+    /* --------------------------------------------
+        4.1. Main Navigation
+    -------------------------------------------- */
+        
+    #navigation {
+    left: 30px;
+}
+#navigation li span {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    font: 12px/21px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    white-space: nowrap;
+    text-align: left;
+    display: none;
+    vertical-align: middle;
+    height: 42px;
+}
+/* ------------------------------------------------
+
+    5. Basic Elements
+
+------------------------------------------------ */
+   /* --------------------------------------------
+        5.1. Typography
+   -------------------------------------------- */
+  h2 {
+    font: 300 33px/40px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-bottom: 20px;
+  }
+   h3 {
+    font: 300 40px/40px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-bottom: 30px;
+  }
+  h4 {
+    font: 300 22px/24px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-bottom: 23px;
+  }
+   h5 {
+    font: 300 20px/40px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-bottom: 5px;
+  }
+   h6 {
+    font: 300 36px/36px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-bottom: 18px;
+  }
+
+  p {
+  color: #fff;
+  font: 16px/20px 'Open Sans', Arial,sans-serif;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+   /* --------------------------------------------
+        5.2. Lists
+   -------------------------------------------- */
+      
+
+   /* --------------------------------------------
+        5.3. Buttons
+   -------------------------------------------- */
+
+.sm_button {
+  width: auto;
+}
+.yellow_button {
+    height: 57px;
+    line-height: 57px;
+    font-size: 16px;
+}
+
+
+/* --------------------------------------------
+        6. Content
+   -------------------------------------------- */
+.box_1_left {
+    float: left;
+    width: 600px;
+}
+.method li {
+	padding-bottom: 20px;
+}
+.method li p {
+	font-size: 26px;
+}
+.box_1_right_ins_cont {
+    padding: 20px 50px;
+}
+.persons_number {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+.box_ul li {
+    padding-left: 36px;
+    color: #fff;
+    font: 20px/38px 'Open Sans', Arial,sans-serif;
+    background: url(../images/box_2_li_icon.png) 0 10px no-repeat;
+}
+.box_2_img img {
+	width: 500px;
+}
+.box_3_img img {
+	width: 416px;
+}
+
+.showing_box {
+  padding-top: 30px;
+}
+.showing_box img {
+  margin-bottom: 10px;
+}
+.showing_box p {
+  color: #fff;
+  font: 300 20px/20px 'Open Sans', Arial,sans-serif;
+}
+.showing_box span {
+  color: #fff;
+  font: 600 32px/32px 'Open Sans', Arial,sans-serif;
+  display: block;
+}
+
+.help_box p {
+  color: #fff;
+  font: 300 24px/24px 'Open Sans', Arial,sans-serif;
+  padding: 0;
+}
+.help_box em {
+  color: #fff;
+  font: 300 16px/18px 'Open Sans', Arial,sans-serif;
+}
+.box_6_form {
+  padding-top: 0px;
+  padding-bottom: 25px;
+}
+
+}
+
+
 @media only screen and (max-width: 992px) {
  body{min-width:768px;}
 
