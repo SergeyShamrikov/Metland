@@ -751,7 +751,7 @@
                                     <div class="phon_form_arrow"></div>
                                       <div class="row">
                                         <div class="col-md-8">
-                                          <input type="text" value="" placeholder="+7 () - -">
+                                          <input type="text" id="phone2" name="phone" placeholder="Введите ваш телефон">
                                           <p>
                                             <em>На этот номер мы отправим напоминание о вебинаре <strong>за 15 минут</strong> до его начала.</em>
                                           </p>
@@ -855,7 +855,8 @@
                                     <div class="phon_form_arrow"></div>
                                       <div class="row">
                                         <div class="col-md-8">
-                                          <input type="text" value="" placeholder="+7 () - -">
+
+                                          <input type="text" id="phone3" name="phone" placeholder="Введите ваш телефон">
                                           <p>
                                             <em>Ссылка на вебинар находится у вас в письме</em>
                                           </p>
@@ -1022,7 +1023,8 @@
                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
                     <li class="row w_50pr alignleft">
                         <div class="col-sm-12">
-                            <input type="email" placeholder="Телефон" required name="cf_phone" class="txt_field"> 
+                            <!-- <input type="text"  name="phone" placeholder="Введите ваш телефон"> -->
+                            <input type="text" id="phone" placeholder="Телефон" required name="cf_phone" class="txt_field"> 
                         </div><!--/ [col] -->
                     </li>
                     <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
@@ -1068,7 +1070,8 @@
         <script src="js/jquery.classycountdown.js"></script>
         <script src="js/jquery.settings.countdown.js"></script>
 
-       
+        <script src="js/jquery.maskedinput.js"></script>
+        <script src="js/phone_settings.js"></script>
        
         <!-- Theme files
         ============================================ -->
