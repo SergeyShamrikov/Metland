@@ -17,7 +17,7 @@
 
 			var self = this;
 
-			// self.NameFunction();
+			self.countPeopleSignedUp();
 			self.scrollContent.init();
 
 		},
@@ -432,12 +432,45 @@
 
 		},
 
+		/**
+		**	Subscribe Form
+		**/
+
+		countPeopleSignedUp : function(){
+			var val = $.cookie("val1"), 
+				qt;
+			if(val){
+				qt = +val;
+			}
+			else{
+				qt = 315;
+			}
+
+            function myFunc(){
+            	if (self.TMR) clearTimeout (TMR);
+            	$('.count_people_signed_up').each(function(){
+					var obj = $(this);
+					obj.text(qt + 1);
+
+            	});
+				self.TMR = setTimeout (myFunc, Math.random () * 12345);
+				qt+=1;
+				$.cookie("val1", qt, {
+				    expires: 5
+				});
+            }
+			myFunc();
+
+		},
 	}
 
 
 	$(function(){
 
 		Core.DOMReady();
+
+            
+
 
 	});
 
