@@ -593,6 +593,10 @@ input:not([type="radio"]):not([type="checkbox"]){
       background-color: #ffeb9b;
       text-decoration: none;
     }
+    .yellow_button:focus {
+      background-color: #ffeb9b;
+      text-decoration: none;
+    }
     .sm_button {
       width: auto !important;
     }
@@ -625,6 +629,11 @@ input:not([type="radio"]):not([type="checkbox"]){
       text-decoration: none;
     }
     .white_button:active {
+      color: #2d2d2d;
+      background-color: #e5e5e5;
+      text-decoration: none;
+    }
+    .white_button:focus {
       color: #2d2d2d;
       background-color: #e5e5e5;
       text-decoration: none;
@@ -734,14 +743,15 @@ input:not([type="radio"]):not([type="checkbox"]){
           box-shadow: 0 0 8px 2px #122a2f;
           padding: 40px 40px;
           text-align: center;
+          position: relative;
        }
        .pattern_blue p {
         padding: 0;
        }
-       .pattern_blue  input[type="text"] {
-          margin-bottom: 18px;
+       .pattern_blue  input {
+          margin-bottom: 18px !important;
        }
-       .pattern_blue input[type="submit"]{
+       .pattern_blue button {
           height: 76px;
           line-height: 76px;
           font-size: 20px;
@@ -759,7 +769,7 @@ input:not([type="radio"]):not([type="checkbox"]){
           padding: 40px 40px;
        }
 
-       .lightblue_blue  input[type="text"] {
+       .lightblue_blue  input {
           margin-bottom: 18px;
        }
 
@@ -777,7 +787,29 @@ input:not([type="radio"]):not([type="checkbox"]){
         font: 600 18px/20px 'Open Sans', Arial,sans-serif;
         color: #272727;
        }
-
+        .w_50pr {
+          width: 50%;
+         
+        }
+        .arcticmodal-close {
+          position: absolute;
+          height: 28px;
+          width: 28px;
+          top: -12px;
+          right: -12px;
+          font: 600 22px/26px 'Open Sans', Arial,sans-serif;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        background: url(../images/pattern_blue.jpg) 0 0 repeat;
+        -moz-border-radius:50%; /* Firefox */ 
+        -webkit-border-radius:50%; /*Safari and chrome */ 
+        -khtml-border-radius:50%; /*Linux browsers*/
+        border-radius:50%; /*CSS3*/ 
+        }
+        .arcticmodal-close:hover {
+          color: #272727;
+        }
 
 
 /* ------------------------------------------------
