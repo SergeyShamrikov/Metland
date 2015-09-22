@@ -128,13 +128,17 @@
 
 				var self = this;
 
-				$('.section_content').height(self.w.height());		    	
+				$('.section_content').height(self.w.height());
+
+				$(".section_content:not(:last-child):not(:first-child)").css({
+					"margin-bottom": self.w.height()/2
+				});		    	
 
 		    },
 
 		    sticky :function(){
 
-		    	var self = this;
+		    	var self = this;    	
 
 		    	$(".section_content").each(function(){
 

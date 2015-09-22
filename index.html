@@ -606,7 +606,8 @@
                             </div>
 
                             <div class="box_5_button_poz">
-                              <a href="" class="white_button sm_button">Оставить отзыв</a>
+                              <a href="" class="white_button sm_button modal_btn" data-modal="feedback">Оставить отзыв</a>
+
                             </div>
 
                           </div>
@@ -938,7 +939,29 @@
 
             </div>
 
-            <div id="entry_webinar" class="pattern_blue"></div>
+            <div id="entry_webinar" class="pattern_blue">
+                <h4>Введите данные и вы получите доступ к <strong>бесплатному</strong> вебинару</h4>
+                <input type="text" value="" placeholder="Имя">
+                <input type="text" value="" placeholder="E-mail">
+                <br>
+                <input type="submit" value="Записаться бесплатно" class="yellow_button input_button">
+                <p><strong>317</strong> человек записалось сегодня</p>
+            </div>
+
+            <div id="feedback" class="lightblue_blue">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" value="" placeholder="Имя">
+                    <input type="text" value="" placeholder="Телефон">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" value="" placeholder="E-mail">
+                  </div>
+                </div>
+                <textarea class="placeholder_textarea">Введите текст</textarea>
+                <br>
+                <input type="submit" value="отправить" class="yellow_button sm_button input_button">
+            </div>
 
         </div>
 
@@ -959,7 +982,8 @@
         <script src="js/jquery.throttle.js"></script>
         <script src="js/jquery.classycountdown.js"></script>
         <script src="js/jquery.settings.countdown.js"></script>
-        
+
+        <script src="js/placeholder_textarea.js"></script>
        
        
         <!-- Theme files
