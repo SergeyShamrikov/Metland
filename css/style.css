@@ -311,7 +311,7 @@
         padding-top: 20px;
         position: relative;
       }
-      .heder_box_2 span {
+      .heder_box_2 em {
         width: 47px;
         height: 16px;
         display: block;
@@ -767,6 +767,7 @@ input:not([type="radio"]):not([type="checkbox"]){
           background:  url(../images/pattern_green.jpg) 0 0 repeat;
           box-shadow: 0 0 8px 2px #122a2f;
           padding: 40px 40px;
+          position: relative;
        }
 
        .lightblue_blue  input {
@@ -809,6 +810,9 @@ input:not([type="radio"]):not([type="checkbox"]){
         }
         .arcticmodal-close:hover {
           color: #272727;
+        }
+        .lightblue_blue .arcticmodal-close {
+          background:  url(../images/pattern_green.jpg) 0 0 repeat;
         }
 
 
@@ -881,6 +885,7 @@ input:not([type="radio"]):not([type="checkbox"]){
       padding-top: 45px;
       padding-bottom: 15px;
       padding-left: 15px;
+      position: relative;
     }
     .persons_number span {
       width: 74px;
@@ -891,19 +896,173 @@ input:not([type="radio"]):not([type="checkbox"]){
       text-align: center;
       color: #ffd83d;
       font: 600 28px/74px 'Open Sans', Arial,sans-serif;
+      position: absolute;
     }
     .persons_number_poz_1 {
       background:  url(../images/persons_number_poz_1.png) 0 0 no-repeat;
     }
     .persons_number_poz_2{
       background:  url(../images/persons_number_poz_2.png) 0 0 no-repeat;
+      left: 94px;
     }
     .persons_number_poz_3{
       background:  url(../images/persons_number_poz_3.png) 0 0 no-repeat;
+      left: 174px;
     }
-    .persons_number_poz_4{
-      background:  url(../images/persons_number_poz_4.png) 0 0 no-repeat;
+
+    .count_people_signed_up_style {
+      height: 74px;
+      font: 600 28px/74px 'Open Sans', Arial,sans-serif;
+      color: #ffd83d;
+      letter-spacing: 63px;
+      padding-left: 29px;
     }
+    
+    .wheel_speed_1 {
+    z-index: 100;
+ 
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 27700ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 27700ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 27700ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+ 
+    animation-name: spin;
+    animation-duration: 27700ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+ .wheel_speed_2 {
+    z-index: 100;
+ 
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 7700ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 7700ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 7700ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+ 
+    animation-name: spin;
+    animation-duration: 7700ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.persons_number_pop_up {
+  padding-top: 0px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin-left: -15px;
+  width: 260px;
+  margin: 0 auto;
+}
+.add_persons_number_pop_up {
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.add_persons_number_pop_up p {
+  text-align: left;
+}
+
+ .wheel_speed_3 {
+    z-index: 100;
+ 
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 3700ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 3700ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 3700ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+ 
+    animation-name: spin;
+    animation-duration: 3700ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+
 
     .box_1_right p {
       padding-bottom: 30px;
