@@ -517,7 +517,7 @@ input:not([type="radio"]):not([type="checkbox"]){
     border:none;
     color:#272727;
     padding: 0 20px;
-    font: 300 18px/20px 'Open Sans', Arial,sans-serif;
+    font: 600 18px/20px 'Open Sans', Arial,sans-serif;
     color: #272727;
     -moz-border-radius:4px; /* Firefox */ 
     -webkit-border-radius:4px; /*Safari and chrome */ 
@@ -529,6 +529,16 @@ input:not([type="radio"]):not([type="checkbox"]){
     height: 60px !important;
     line-height: 60px !important;
     font-size: 16px !important;
+}
+
+.normal_ul {
+  padding-bottom: 20px;
+}
+.normal_ul li {
+  font: 400 16px/24px 'Open Sans', Arial,sans-serif;
+    color: #fff;
+    padding-left: 23px;
+    background:  url(../images/normal_ul_icon.png) 0 6px no-repeat;
 }
    /* --------------------------------------------
         5.2. Lists
@@ -557,7 +567,7 @@ input:not([type="radio"]):not([type="checkbox"]){
       text-transform: uppercase;
       text-align: center;
       text-decoration: none;
-      border-bottom: 3px solid #273242;
+      border-bottom: 3px solid #273242 !important;
         -moz-border-radius:4px 4px 6px 6px; /* Firefox */ 
         -webkit-border-radius:4px 4px 6px 6px; /*Safari and chrome */ 
         -khtml-border-radius:4px 4px 6px 6px; /*Linux browsers*/
@@ -573,17 +583,52 @@ input:not([type="radio"]):not([type="checkbox"]){
       text-decoration: none;
     }
     .sm_button {
-      width: auto;
+      width: auto !important;
     }
-
+        
+    .white_button {
+      height: 50px;
+      width: 100%;
+      font: 600 20px/50px 'Open Sans', Arial,sans-serif;
+      color: #2d2d2d;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 26px;
+      background-repeat: repeat-x;
+      border: none;
+      cursor: pointer;
+      background-color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      border-bottom: 3px solid #273242;
+        -moz-border-radius:4px 4px 6px 6px; /* Firefox */ 
+        -webkit-border-radius:4px 4px 6px 6px; /*Safari and chrome */ 
+        -khtml-border-radius:4px 4px 6px 6px; /*Linux browsers*/
+        border-radius:4px 4px 6px 6px; /*CSS3*/ 
+        outline: none;
+    }
+    .white_button:hover {
+      color: #2d2d2d;
+      background-color: #e5e5e5;
+      text-decoration: none;
+    }
+    .white_button:active {
+      color: #2d2d2d;
+      background-color: #e5e5e5;
+      text-decoration: none;
+    }
    /* --------------------------------------------
         5.4. Slider
    -------------------------------------------- */
         
         .owl-carousel{
-            margin: 0 100px;
+            padding: 0 100px;
             padding-top: 30px;
 
+        }
+        .owl-stage-outer {
+          
         }
 
         .owl-carousel .owl-item{
@@ -599,7 +644,7 @@ input:not([type="radio"]):not([type="checkbox"]){
           margin-top: -24px;
           width: 48px;
           height: 48px;
-          left: -100px;
+          left: 0px;
           background:  url(../images/prev_arrow.png) 0 0 no-repeat;
           opacity: 0.5;
           -webkit-transition: all 0.5s;
@@ -616,7 +661,7 @@ input:not([type="radio"]):not([type="checkbox"]){
 
         .owl-nav>div.owl-next{
             left: auto;
-            right: -100px;
+            right: 0px;
             background:  url(../images/next_arrow.png) 0 0 no-repeat;
         }
         
@@ -640,19 +685,22 @@ input:not([type="radio"]):not([type="checkbox"]){
 
     
         .reviews_frame {
-          position: relative;
-          border: 3px solid #fff;
+          
           float: left;
           margin-right: 30px;
+          overflow: hidden;
+        }
+        .reviews_frame img {
+          float: left;
+          border: 3px solid #fff;
         }
         .reviews_frame span {
           display: block;
-          position: absolute;
+          margin-top: 12px;
           height: 17px;
           width: 10px;
-          right: -13px;
-          top: 12px;
           background:  url(../images/reviews_frame_arrow.png) 0 0 no-repeat;
+          float: left;
         }
 
         .reviews_box li {
@@ -682,9 +730,6 @@ input:not([type="radio"]):not([type="checkbox"]){
 
 ------------------------------------------------ */
 
-    .box_1 {
-      
-    }
     .big_ben {
       background: url(../images/big_ben_img.png) 60% 100% no-repeat;
       display: block;
@@ -724,14 +769,7 @@ input:not([type="radio"]):not([type="checkbox"]){
       float: right;
       position: relative;
     }
-    .box_1_right_bg_1 {
-      width: 370px;
-      background:  url(../images/box_1_right_bg.jpg) 0 0 no-repeat;
-    }
-    .box_1_right_ins {
-      
-      position: relative;
-    }
+   
     .box_1_right_bg {
       position: absolute;
       z-index: 1;
@@ -746,7 +784,6 @@ input:not([type="radio"]):not([type="checkbox"]){
     }
 
     .box_1_right_ins_cont {
-        background:  url(../images/box_1_right_bg_wr.jpg) 0 0 repeat;
         position: relative;
         z-index: 2;
         padding: 40px 50px;
@@ -835,6 +872,10 @@ input:not([type="radio"]):not([type="checkbox"]){
         content: attr(data-amount);
     }
 
+    .box_5_button_poz {
+      margin-left: 100px;
+    }
+
     .box_6_form {
       padding-top: 30px;
       padding-bottom: 85px;
@@ -873,6 +914,75 @@ input:not([type="radio"]):not([type="checkbox"]){
         font-size: 16px !important;
         padding: 0 !important;
       }
+    
+
+
+.ClassyCountdownDemo { 
+  display:block ;
+  margin-bottom: 80px;
+}
+.ClassyCountdown-seconds {
+  display: none !important;
+}
+
+.countdown_wr {
+  position: relative;
+}
+.countdown_wr_text {
+  width: 140px;
+  padding: 12px 18px;
+  position: absolute;
+  top: -2px;
+  right: -25px;
+  background:  url(../images/opacity.png) 0 0 repeat;
+  display: none;
+}
+.countdown_wr_text em {
+  height: 19px;
+  width: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: -10px;
+  background:  url(../images/countdown_wr_text_arrow.png) 0 0 no-repeat;
+}
+.countdown_wr_text  p{
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+.countdown_wr:hover .countdown_wr_text{
+  display: block;
+}
+
+
+.box_7 h6, .box_8 h6 {
+  color: #fff;
+  font: 300 24px/48px 'Open Sans', Arial,sans-serif;
+  padding-bottom: 16px;
+}
+
+.phon_form {
+  padding-top: 8px;
+  position: relative; 
+}
+.phon_form_arrow {
+  position: absolute;
+  left: -120px;
+  top: 30px;
+  background:  url(../images/phon_form_arrow.png) 0px 0 no-repeat;
+  width: 30px;
+  height: 15px;
+}
+.phon_form p {
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+}
+.video_img_sm {
+  margin-top: 8px;
+}
+
 
 
    /* --------------------------------------------
