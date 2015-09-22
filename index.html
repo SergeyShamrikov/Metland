@@ -751,7 +751,7 @@
                                     <div class="phon_form_arrow"></div>
                                       <div class="row">
                                         <div class="col-md-8">
-                                          <input type="text" id="phone2" name="phone" placeholder="Введите ваш телефон">
+                                          <input type="text" class="phone_mask" name="phone" placeholder="+7(___) ___-____">
                                           <p>
                                             <em>На этот номер мы отправим напоминание о вебинаре <strong>за 15 минут</strong> до его начала.</em>
                                           </p>
@@ -771,7 +771,7 @@
                                   
 
                                     <div class="video_img_sm">
-                                      <img src="images/video_img_sm.jpg" height="145" width="270" alt="">
+                                        <a href="#" class="modal_btn" data-modal="video" data-src="https://www.youtube.com/embed/o4jo3MqKN_k"><img src="images/video_img_sm.jpg" height="145" width="270" alt=""></a>
                                     </div>
 
                                 </div>
@@ -839,7 +839,7 @@
                                   <p class="f_z_18"><strong>Наш бесплатный вебинар начнется через:</strong></p>
                                     
                                     <div class="countdown_wr">
-                                      <div id="countdown2" class="ClassyCountdownDemo"></div>
+                                      <div id="countdown3" class="ClassyCountdownDemo"></div>
                                       <div class="countdown_wr_text">
                                         <p>Наш вебинар начнется  в 22:00 по МСК</p>
                                         <em></em>
@@ -856,7 +856,7 @@
                                       <div class="row">
                                         <div class="col-md-8">
 
-                                          <input type="text" id="phone3" name="phone" placeholder="Введите ваш телефон">
+                                          <input type="text" class="phone_mask" name="phone" placeholder="+7(___) ___-____">
                                           <p>
                                             <em>Ссылка на вебинар находится у вас в письме</em>
                                           </p>
@@ -876,8 +876,9 @@
                                   
 
                                     <div class="video_img_sm">
-                                      <img src="images/video_img_sm.jpg" height="145" width="270" alt="">
+                                        <a href="#" class="modal_btn" data-modal="video" data-src="https://www.youtube.com/embed/o4jo3MqKN_k"><img src="images/video_img_sm.jpg" height="145" width="270" alt=""></a>
                                     </div>
+
 
                                 </div>
                                 <div class="col-md-8">
@@ -950,21 +951,21 @@
                      <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
                     <li class="row">
                         <div class="col-sm-12">
-                            <input type="text" placeholder="Имя" required name="cf_name" class="txt_field">
+                            <input type="text" placeholder="Имя" required name="cf_name">
                         </div><!--/ [col] -->
                     </li>
                     <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
                     <li class="row">
                         <div class="col-sm-12">
-                            <input type="email" placeholder="E-mail" required name="cf_email" class="txt_field"> 
+                            <input type="email" placeholder="E-mail" required name="cf_email"> 
                         </div><!--/ [col] -->
                     </li>
                     <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
                     <li class="row">
                         <div class="col-xs-12">
-                            <button class="btn_type small yellow_button input_button">Записаться бесплатно</button>
+                            <button class="yellow_button">Записаться бесплатно</button>
                         </div><!--/ [col] -->
                     </li>
                     <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
@@ -997,8 +998,7 @@
                     <p><strong>Андрей Скороход</strong> записался <br>на семинар только что</p>
         
                 </div>
-
-                
+ 
             </div>
 
             <div id="feedback" class="lightblue_blue">
@@ -1006,25 +1006,22 @@
               <form class="contactform" novalidate>
                 <ul>
                      <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row w_50pr alignleft">
-                        <div class="col-sm-12">
-                            <input type="text" placeholder="Имя" required name="cf_name" class="txt_field">
+                    <li class="row">
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Имя" required name="cf_name">
                         </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row w_50pr alignright">
-                        <div class="col-sm-12">
-                            <input type="email" placeholder="E-mail" required name="cf_email" class="txt_field"> 
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
 
+                        <div class="col-sm-6">
+                            <input type="email" placeholder="E-mail" required name="cf_email"> 
+                        </div><!--/ [col] -->
+                    </li>
+                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
+                    
                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row w_50pr alignleft">
-                        <div class="col-sm-12">
+                    <li class="row">
+                        <div class="col-sm-6">
                             <!-- <input type="text"  name="phone" placeholder="Введите ваш телефон"> -->
-                            <input type="text" id="phone" placeholder="Телефон" required name="cf_phone" class="txt_field"> 
+                            <input type="text" placeholder="Телефон" required name="cf_phone" class="phone_mask"> 
                         </div><!--/ [col] -->
                     </li>
                     <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
@@ -1033,7 +1030,7 @@
                     <li class="row">
 
                         <div class="col-xs-12">  
-                            <textarea class="txt_field txt_area" placeholder="Введите текст" rows="3" required name="cf_message" data-field-name="Message" data-min-characters="20" ></textarea>
+                            <textarea placeholder="Введите текст" rows="3" required name="cf_message" data-field-name="Message" data-min-characters="20" ></textarea>
                             
                         </div><!--/ [col] -->
                     </li>
@@ -1064,14 +1061,10 @@
         <script type="text/javascript" src="plugins/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
         <script type="text/javascript" src="plugins/owl.carousel/owl.carousel.min.js"></script>
         <script type="text/javascript" src="plugins/jquery.cookie.js"></script>
-
-        <script src="js/jquery.knob.js"></script>
-        <script src="js/jquery.throttle.js"></script>
-        <script src="js/jquery.classycountdown.js"></script>
-        <script src="js/jquery.settings.countdown.js"></script>
-
-        <script src="js/jquery.maskedinput.js"></script>
-        <script src="js/phone_settings.js"></script>
+        <script type="text/javascript" src="plugins/jquery.maskedinput.js"></script>
+        <script type="text/javascript" src="plugins/classycountdown/js/jquery.knob.js"></script>
+        <script type="text/javascript" src="plugins/classycountdown/js/jquery.throttle.js"></script>
+        <script type="text/javascript" src="plugins/classycountdown/js/jquery.classycountdown.min.js"></script>
        
         <!-- Theme files
         ============================================ -->

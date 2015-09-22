@@ -10,6 +10,7 @@
 
 			self.scrollContent.init();
 			self.counters();
+			self.contactForm.init();
 
 		},
 
