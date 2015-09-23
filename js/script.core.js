@@ -133,7 +133,7 @@
 				$('.section_content').height(self.w.height());
 
 				$(".section_content:not(:last-child):not(:first-child)").css({
-					"margin-bottom": self.w.height()/2
+					"margin-bottom": self.w.height()
 				});		    	
 
 		    },

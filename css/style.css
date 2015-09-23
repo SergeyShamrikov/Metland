@@ -17,7 +17,7 @@
 @import "reset.css";
 @import "bootstrap.css";
 @import "animate.css";
-@import "../font-awesome-4.4.0/css/font-awesome.min.css";
+@import "font-awesome.min.css";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 
@@ -162,9 +162,6 @@
    }
 .section_content {
     overflow: hidden;
-   }
-   .section_content:not(:last-child){
-        margin-bottom: 800px;
    }
 
    .section_content_inner{
