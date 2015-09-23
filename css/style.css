@@ -1091,11 +1091,11 @@ input:not([type="radio"]):not([type="checkbox"]){
     .add_persons_number {
       height: 63px;
     }
+
     .add_persons_number p {
       color: #fff;
       font: 14px/21px 'Open Sans', Arial,sans-serif;
       padding-bottom: 0px;
-      padding-top: 3px;
     }
 
     .box_ul li{
