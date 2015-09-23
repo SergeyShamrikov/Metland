@@ -534,6 +534,9 @@ input:not([type="radio"]):not([type="checkbox"]){
     -khtml-border-radius:4px; /*Linux browsers*/
     border-radius:4px; /*CSS3*/ 
 }
+input[type=email] {
+    outline: none;
+}
 
 .input_button {
     height: 60px !important;
