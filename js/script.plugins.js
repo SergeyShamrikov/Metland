@@ -149,7 +149,7 @@
                 $('#countdown3').ClassyCountdown({
                     end: '440000',
                     now: '0',
-                    labels: false,
+                    labels: true,
                     labelsOptions: {
                     lang: {
                       days: 'Дней',
