@@ -643,17 +643,28 @@
                               
                                 
                                 <div class="box_6_form">
-                                <div class="row">
-                                  <div class="col-md-4">
-                                    <input type="text" value="" placeholder="Имя"/>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <input type="text" value="" placeholder="E-mail"/>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <input type="submit" value="Отправить" class="yellow_button sm_button input_button"/>
-                                  </div>
-                                 </div> 
+
+                                  <form class="contactform" novalidate>
+                                    <ul>
+                                        <li class="row">
+
+                                            <div class="col-sm-4">
+                                                <input type="text" placeholder="Имя" required name="cf_name" class="txt_field">
+
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <input type="email" placeholder="E-mail" required name="cf_email" class="txt_field"> 
+                                            </div>
+
+                                            <div class="col-xs-4">
+                                                <button class="btn_type small yellow_button sm_button input_button">Отправить</button>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                  </form> 
+
                                 </div>
                               
 
@@ -676,7 +687,7 @@
                                     </div>
                                   </div>
                                   <div class="col-md-6">
-                                    <a href="" class="yellow_button button_50">Перезвоните на мой номер</a>
+                                    <a href="" class="yellow_button button_50 modal_btn" data-modal="entry_phone">Перезвоните на мой номер</a>
                                   </div>
                                 </div>
                                 <div class="clear"></div>
@@ -688,7 +699,7 @@
                                     </div>
                                   </div>
                                   <div class="col-md-6">
-                                    <a href="" class="yellow_button button_50">написать</a>
+                                    <a href="" class="yellow_button button_50 modal_btn" data-modal="entry_e_mail">написать</a>
                                   </div>
                                 </div>
                                 
@@ -749,17 +760,25 @@
 
                                     <div class="phon_form">
                                     <div class="phon_form_arrow"></div>
-                                      <div class="row">
-                                        <div class="col-md-8">
-                                          <input type="text" class="phone_mask" name="phone" placeholder="+7(___) ___-____">
-                                          <p>
-                                            <em>На этот номер мы отправим напоминание о вебинаре <strong>за 15 минут</strong> до его начала.</em>
-                                          </p>
-                                        </div>
-                                        <div class="col-md-4">
-                                          <input type="submit" value="Отправить" class="yellow_button  input_button">
-                                        </div>
-                                      </div>
+                                      <form class="contactform" novalidate>
+                                            <ul>
+                                                <li class="row">
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="phone_mask txt_field" required name="phone" placeholder="+7(___) ___-____">
+                                                    
+                                                      <p>
+                                                        <em>Ссылка на вебинар находится у вас в письме</em>
+                                                      </p>
+
+                                                    </div>
+
+                                                    <div class="col-xs-4">
+                                                        <button class="btn_type small yellow_button  input_button">Отправить</button>
+                                                    </div><!--/ [col] -->
+
+                                                </li>
+                                            </ul>
+                                          </form>
                                     </div>
 
                                  
@@ -853,18 +872,29 @@
 
                                     <div class="phon_form">
                                     <div class="phon_form_arrow"></div>
-                                      <div class="row">
-                                        <div class="col-md-8">
+                                      
+                                        
 
-                                          <input type="text" class="phone_mask" name="phone" placeholder="+7(___) ___-____">
-                                          <p>
-                                            <em>Ссылка на вебинар находится у вас в письме</em>
-                                          </p>
-                                        </div>
-                                        <div class="col-md-4">
-                                          <input type="submit" value="Отправить" class="yellow_button  input_button">
-                                        </div>
-                                      </div>
+                                          <form class="contactform" novalidate>
+                                            <ul>
+                                                <li class="row">
+                                                    <div class="col-sm-8">
+                                                        <input type="text" class="phone_mask txt_field" required name="phone" placeholder="+7(___) ___-____">
+                                                    
+                                                      <p>
+                                                        <em>Ссылка на вебинар находится у вас в письме</em>
+                                                      </p>
+
+                                                    </div>
+
+                                                    <div class="col-xs-4">
+                                                        <button class="btn_type small yellow_button  input_button">Отправить</button>
+                                                    </div><!--/ [col] -->
+
+                                                </li>
+                                            </ul>
+                                          </form>
+
                                     </div>
 
                                  
@@ -1044,6 +1074,87 @@
                     <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
                 </ul>
             </form>
+            </div>
+            
+
+            <div id="entry_phone" class="pattern_read">
+              <div class="box-modal_close arcticmodal-close">&times;</div>
+              <h4>ОБРАТНЫЙ ЗВОНОК</h4>
+
+              <form class="contactform" novalidate>
+                <ul>
+                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
+                    <li class="row">
+                        <div class="col-sm-12">
+                            <input type="text" placeholder="Имя" required name="cf_name">
+                        </div><!--/ [col] -->
+                    </li>
+                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
+                    <li class="row">
+                        <div class="col-sm-12">
+                            <input type="text" class="phone_mask txt_field" required name="phone" placeholder="Телефон">
+                        </div><!--/ [col] -->
+                    </li>
+                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
+                    <li class="row">
+                        <div class="col-xs-12">
+                            <button class="yellow_button">ПЕРЕЗВОНИТЕ МНЕ</button>
+                        </div><!--/ [col] -->
+                    </li>
+                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
+                </ul>
+                
+                <p>Оставьте свой контактный номер телефона и мы перезвоним Вам в течение 15 минут.</p>
+
+              </form>
+
+              
+ 
+            </div>
+
+            <div id="entry_e_mail" class="pattern_read">
+              <div class="box-modal_close arcticmodal-close">&times;</div>
+              <h4>ЗАДАЙТЕ СВОЙ ВОПРОС</h4>
+
+              <form class="contactform" novalidate>
+                <ul>
+                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
+                    <li class="row">
+                        <div class="col-sm-12">
+                            <input type="text" placeholder="Имя" required name="cf_name">
+                        </div><!--/ [col] -->
+                    </li>
+                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
+                    <li class="row">
+                        <div class="col-sm-12">
+                            <input type="email" placeholder="E-mail" required name="cf_email" class="txt_field">
+                        </div><!--/ [col] -->
+                    </li>
+                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
+                    <li class="row">
+
+                        <div class="col-xs-12">  
+                            <textarea class="txt_field txt_area" placeholder="Напишете свой вопрос" rows="3" required name="cf_message" data-field-name="Message" data-min-characters="20" ></textarea>
+                            
+                        </div><!--/ [col] -->
+                    </li>
+                    <li class="row">
+                        <div class="col-xs-12">
+                            <button class="yellow_button">задать вопрос</button>
+                        </div><!--/ [col] -->
+                    </li>
+                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
+                </ul>
+                <p>Напишите нам и мы ответим на любой вопрос в течении 3 часов.</p>
+
+              </form>
+
+              
+ 
             </div>
 
         </div>

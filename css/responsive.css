@@ -183,7 +183,10 @@
   font-size: 12px;
   line-height: 18px;
 }
-
+.countdown_wr_text {
+    top: -12px;
+    left: 270px;
+}
 
 
 }
