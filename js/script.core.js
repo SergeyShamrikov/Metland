@@ -476,22 +476,31 @@
             	});
 
             	$('.name_people_signed_box').each(function(){
-            		console.log(name);
 
             		$(this).find(".name").html(name);
+            		$(this).addClass('active');
 
             	});
+
+            	setTimeout(function(){
+            		$('.name_people_signed_box').removeClass("active");
+            	},1000);
             	// увеличиваем переменную на 1
 				qt+=1;
 				index+=1;
 
-				if(index == lastInd){
+				if(index == lastInd+1){
 					index = 0;					
 				}
 
 
 				// записываем переменную в куки
 				$.cookie("val1", qt, {
+				    expires: 5
+				});
+
+				// записываем имя в куки
+				$.cookie("nameIndex", index, {
 				    expires: 5
 				});
 
