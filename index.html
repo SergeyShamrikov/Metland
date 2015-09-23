@@ -238,11 +238,10 @@
                                                 <p>человек записалось сегодня</p>
                                     
                                             </div>
-                                    
-                                            <div class="add_persons_number name_people_signed_box">
+                                            <div class="add_persons_number name_people_signed_box animated flipInY animated_2">
                                     
                                                 <img src="images/add_persons_number_icon.png" height="48" width="48" alt="">
-                                                <p><strong class="name">Андрей Скороход</strong> записался <br>на семинар только что</p>
+                                                <p><strong class="name">Андрей Скороход</strong> <br> записался на семинар только что</p>
                                     
                                             </div>
                                     
@@ -1026,7 +1025,7 @@
                 <div class="add_persons_number add_persons_number_pop_up name_people_signed_box">
         
                     <img src="images/add_persons_number_icon.png" height="48" width="48" alt="">
-                    <p><strong class="name">Андрей Скороход</strong> записался <br>на семинар только что</p>
+                    <p><strong class="name">Андрей Скороход</strong><br> записался на семинар только что</p>
         
                 </div>
  
@@ -1219,7 +1218,13 @@
         <script type="text/javascript" src="plugins/classycountdown/js/jquery.knob.js"></script>
         <script type="text/javascript" src="plugins/classycountdown/js/jquery.throttle.js"></script>
         <script type="text/javascript" src="plugins/classycountdown/js/jquery.classycountdown.min.js"></script>
-       
+
+        <script> 
+        $(document).ready(function() {
+          $('.add_persons_number.active').addClass('animated flipInY'); 
+        })
+        </script>
+
         <!-- Theme files
         ============================================ -->
         <script src="js/script.core.js"></script>

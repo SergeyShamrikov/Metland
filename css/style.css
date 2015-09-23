@@ -25,7 +25,11 @@
     1. Default stylesheets
 
 ------------------------------------------------ */
-
+.animated_2 {
+  -webkit-animation-duration: 4200ms;
+  -moz-animation-duration: 4200ms;
+  animation-duration: 4200ms;
+}
    body {
     font-family: 'Open Sans', sans-serif;
     color:#fff;
@@ -1038,6 +1042,7 @@ input:not([type="radio"]):not([type="checkbox"]){
   text-align: left;
 }
 
+
  .wheel_speed_3 {
     z-index: 100;
  
@@ -1086,6 +1091,9 @@ input:not([type="radio"]):not([type="checkbox"]){
     .box_1_right p {
       padding-bottom: 30px;
     }
+    .add_persons_number {
+      height: 63px;
+    }
     .add_persons_number p {
       color: #fff;
       font: 14px/21px 'Open Sans', Arial,sans-serif;
@@ -1095,6 +1103,7 @@ input:not([type="radio"]):not([type="checkbox"]){
     .add_persons_number img {
       float: left;
       margin-right: 15px;
+      margin-top: 10px;
     }
 
 
