@@ -17,6 +17,7 @@
 @import "reset.css";
 @import "bootstrap.css";
 @import "animate.css";
+@import "../font-awesome-4.4.0/css/font-awesome.min.css";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
 
@@ -345,7 +346,6 @@
         background-color: #fff;
         color: #4e4e4e;
         font: 14px/21px 'Open Sans', Arial,sans-serif;
-        display: none;
       }
       .people_add p {
         color: #4e4e4e;
@@ -367,10 +367,6 @@
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
         border-bottom: 9px solid #fff;
-    }
-    .heder_box_2:hover .people_add {
-        display: block;
-    
     }
     /* --------------------------------------------
         4.1. Main Navigation
@@ -900,12 +896,17 @@ input:not([type="radio"]):not([type="checkbox"]){
         padding: 40px 50px;
     }
 
+    .name{
+      display: block;
+    }
+
     .persons_number {
       padding-top: 45px;
       padding-bottom: 15px;
       padding-left: 15px;
       position: relative;
     }
+
     .persons_number span {
       width: 74px;
       height: 74px;
@@ -1092,10 +1093,6 @@ input:not([type="radio"]):not([type="checkbox"]){
       padding-bottom: 0px;
       padding-top: 3px;
     }
-    .add_persons_number img {
-      float: left;
-      margin-right: 15px;
-    }
 
 
 
@@ -1280,3 +1277,20 @@ input:not([type="radio"]):not([type="checkbox"]){
             width: 100%;
             height: 100%;
         }
+
+
+/*vertical align*/
+
+.table_row{
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+.table_row>*{
+  display: table-cell;
+  vertical-align: middle;
+}
+.table_row>.table_img{
+  width: 63px;
+  padding-right: 15px;
+}

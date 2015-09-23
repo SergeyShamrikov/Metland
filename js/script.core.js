@@ -11,6 +11,7 @@
 			self.scrollContent.init();
 			self.counters();
 			self.contactForm.init();
+			self.hoverPeople();
 
 		},
 
@@ -434,6 +435,22 @@
 		},
 
 		/**
+		**	Hover People Add
+		**/
+
+		hoverPeople :function(){
+
+			$(".heder_box_2").hover(
+				function(){
+					$(this).find(".people_add").removeClass('flipOutY').addClass("flipInY");
+				},
+				function(){
+					$(this).find(".people_add").removeClass("flipInY").addClass('flipOutY');	
+				});
+		},
+
+
+		/**
 		**	Subscribe Form
 		**/
 
@@ -479,11 +496,13 @@
 
             		$(this).find(".name").html(name);
             		$(this).addClass('active');
+            		$(this).find("img").addClass("flash");
 
             	});
 
             	setTimeout(function(){
             		$('.name_people_signed_box').removeClass("active");
+            		$('.name_people_signed_box').find('img').removeClass("flash");
             	},1000);
             	// увеличиваем переменную на 1
 				qt+=1;
@@ -491,6 +510,10 @@
 
 				if(index == lastInd+1){
 					index = 0;					
+				}
+
+				if(qt > 999){
+					qt = 100;					
 				}
 
 
@@ -505,7 +528,7 @@
 				});
 
 				// задержка повторного выполнения функции
-				self.TMR = setTimeout (myFunc, Math.random () * 12345);
+				self.TMR = setTimeout (myFunc, Math.random () * 52345);
             }
 			myFunc();
 
