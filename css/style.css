@@ -159,7 +159,9 @@
     width: 1170px;
     margin: 0 auto;
    }
-
+.section_content {
+    overflow: hidden;
+   }
    .section_content:not(:last-child){
         margin-bottom: 800px;
    }
@@ -1124,6 +1126,12 @@ input:not([type="radio"]):not([type="checkbox"]){
     .showing_box p {
       color: #fff;
       font: 300 30px/30px 'Open Sans', Arial,sans-serif;
+    }
+
+    .showing_fa {
+      color: #ffd83d;
+      font-size: 53px;
+      margin-bottom: 20px;
     }
 
     .counter_item .counter{
