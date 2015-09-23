@@ -438,8 +438,23 @@
 		**/
 
 		countPeopleSignedUp : function(){
-			var val = $.cookie("val1"), 
+
+			// получам переменную из куки
+			var val = $.cookie("val1"),
+				nameIndex = $.cookie("nameIndex"),
+				lastInd = $('#name_list').find("li:last-child").index(),
+				index,
 				qt;
+
+			// проверяем есть ли в куки значени index и присваиваем его переменной
+			if(nameIndex){
+				index = +nameIndex;
+			}
+			else{
+				index = 0;
+			}
+
+			// проверяем есть ли в куки значени количества и присваиваем его переменной
 			if(val){
 				qt = +val;
 			}
@@ -447,18 +462,41 @@
 				qt = 315;
 			}
 
+
             function myFunc(){
             	if (self.TMR) clearTimeout (TMR);
+
+            	var name = $('#name_list').find("li").eq(index).text();
+
+            	// находим все счетчики и записываем в них значение переменной
             	$('.count_people_signed_up').each(function(){
 					var obj = $(this);
 					obj.text(qt + 1);
 
             	});
-				self.TMR = setTimeout (myFunc, Math.random () * 12345);
+
+            	$('.name_people_signed_box').each(function(){
+            		console.log(name);
+
+            		$(this).find(".name").html(name);
+
+            	});
+            	// увеличиваем переменную на 1
 				qt+=1;
+				index+=1;
+
+				if(index == lastInd){
+					index = 0;					
+				}
+
+
+				// записываем переменную в куки
 				$.cookie("val1", qt, {
 				    expires: 5
 				});
+
+				// задержка повторного выполнения функции
+				self.TMR = setTimeout (myFunc, Math.random () * 12345);
             }
 			myFunc();
 
