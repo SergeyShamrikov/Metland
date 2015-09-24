@@ -1206,7 +1206,15 @@ input[type=email] {
   top: -2px;
   left: 330px;
   background:  url(../images/opacity.png) 0 0 repeat;
-  display: none;
+
+}
+.countdown_wr_text.animated {
+  display: block;
+  left: 330px;
+}
+.countdown_wr_text {
+  opacity: 0;
+  left: 0;
 }
 .countdown_wr_text em {
   height: 19px;
@@ -1224,6 +1232,8 @@ input[type=email] {
 }
 .countdown_wr:hover .countdown_wr_text{
   display: block;
+  opacity: 1;
+  left: 330px;
 }
 
 
