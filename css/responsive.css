@@ -138,6 +138,9 @@
 .box_3_img img {
 	width: 416px;
 }
+.box_3_img {
+  margin-top: 8px;
+}
 
 .showing_box {
   padding-top: 30px;
@@ -182,9 +185,16 @@
   font-size: 12px;
   line-height: 18px;
 }
-.countdown_wr_text {
+.countdown_wr:hover .countdown_wr_text {
     top: -12px;
     left: 270px;
+}
+.countdown_wr_text.animated {
+  top: -12px;
+    left: 270px;
+}
+.box_ul li {
+  background-position: 0 10px;
 }
 
 

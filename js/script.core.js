@@ -490,7 +490,10 @@
 					var obj = $(this);
 					obj.text(qt + 1);
 
+
+
             	});
+            	
 
             	$('.name_people_signed_box').each(function(){
 
@@ -499,10 +502,19 @@
 
             	});
 
+            	
             	setTimeout(function(){
             		$('.name_people_signed_box').find('img').removeClass("flash");
             	},1000);
+
+            	$('.heder_box_animated').each(function(){
+            		$(this).addClass('active flash');
             	
+            	});
+            	setTimeout(function(){
+            		$('.heder_box_animated').removeClass("active flash");
+            	},1000);
+
             	// увеличиваем переменную на 1
 				qt+=1;
 				index+=1;
