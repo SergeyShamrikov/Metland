@@ -168,7 +168,7 @@
         height: inherit;
         position: relative;
         z-index: 9;
-        padding: 97px 0 100px;
+        padding: 110px 0 100px;
    }
 
    .section_content_inner.sticky_fixed{
@@ -1211,6 +1211,7 @@ input[type=email] {
 .countdown_wr_text.animated {
   display: block;
   left: 330px;
+  opacity: 1;
 }
 .countdown_wr_text {
   opacity: 0;
