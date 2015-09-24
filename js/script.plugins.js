@@ -4,6 +4,49 @@
 
 	$(document).ready(function(){
 
+        /* ------------------------------------------------
+                Pagepiling
+        ------------------------------------------------ */
+            $('#content').pagepiling({
+                menu: "#navigation",
+                sectionsColor: [],
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+                scrollingSpeed: 500,
+                navigation: false,
+                sectionSelector: '.section_content',
+
+                //events
+                onLeave: function(index, nextIndex, direction){
+
+                    var text = $(".section_content").eq(nextIndex).attr("data-text");
+                    $("#next_slide").find(".next_slide_text").text(text); 
+
+                },
+                afterLoad: function(anchorLink, index){
+
+                    var activSlide = $(".section_content").eq(index-1),
+                        count = activSlide.find('.counter').length, 
+                        bodyClass = activSlide.attr("data-hide");
+
+                    $("body").removeClass("hide_header_btn hide_nav hide_next_btn").addClass(bodyClass);
+
+                    if(count){
+                        
+                        $('.counter').each(function(){
+
+                            var count = $(this).attr('data-amount');
+
+                            $(this).animateNumber({ number: count },1000);
+                        });
+
+                    }
+                }
+            });
+
+        /* ------------------------------------------------
+                End of Pagepiling
+        ------------------------------------------------ */
+
 		/* ------------------------------------------------
 				Arcticmodal
 		------------------------------------------------ */
@@ -31,7 +74,6 @@
 				End of Arcticmodal
 		------------------------------------------------ */
 
-
         /* ------------------------------------------------
 				OwlCarousel
 		------------------------------------------------ */
@@ -52,31 +94,6 @@
 
         /* ------------------------------------------------
 				End of OwlCarousel
-		------------------------------------------------ */
-
-        /* ------------------------------------------------
-				Wow JS
-		------------------------------------------------ */
-
-			if($('.wow').length){
-
-				var wow = new WOW({
-
-                  boxClass:     'wow',      // default
-                  animateClass: 'animated', // default
-                  offset:       0,          // default
-                  mobile:       true,       // default
-                  live:         true        // default
-
-                })
-
-                wow.init();
-				
-			}
-
-
-        /* ------------------------------------------------
-				End of Wow JS
 		------------------------------------------------ */
 
         /* ------------------------------------------------
