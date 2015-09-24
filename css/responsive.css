@@ -193,6 +193,9 @@
   top: -12px;
     left: 270px;
 }
+.box_ul li {
+  background-position: 0 10px;
+}
 
 
 }
