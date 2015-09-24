@@ -21,6 +21,7 @@
 
 			self.countPeopleSignedUp();
 			self.scrollContent.init();
+			self.preloader();
 
 		},
 
@@ -31,6 +32,19 @@
 			// self.NameFunction();
 		},
 
+		/**
+		**	Preloader
+		**/
+
+		preloader :function(){
+
+			setTimeout(function(){
+
+				$("#preloader").addClass("load_page");
+				
+			},1000);
+
+		},
 
 		/**
 		**	Counters
@@ -145,7 +159,6 @@
 		    	$(".section_content").each(function(){
 
 		    		var $this = $(this),
-		    			text = $(this).next().attr("data-text"),
 		    			windowScroll = self.d.scrollTop(),
 		    			offset = $this.offset().top;
 
