@@ -495,15 +495,14 @@
             	$('.name_people_signed_box').each(function(){
 
             		$(this).find(".name").html(name);
-            		$(this).addClass('active');
             		$(this).find("img").addClass("flash");
 
             	});
 
             	setTimeout(function(){
-            		$('.name_people_signed_box').removeClass("active");
             		$('.name_people_signed_box').find('img').removeClass("flash");
             	},1000);
+            	
             	// увеличиваем переменную на 1
 				qt+=1;
 				index+=1;
