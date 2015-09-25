@@ -53,28 +53,38 @@
         5.1. Typography
    -------------------------------------------- */
   h2 {
-    font: 300 33px/40px 'Open Sans', Arial,sans-serif;
+    font-size: 33px;
+    line-height: 40px;
     padding-bottom: 20px;
   }
    h3 {
-    font: 300 40px/40px 'Open Sans', Arial,sans-serif;
+    font-size: 40px;
+    line-height: 40px;
     padding-bottom: 30px;
+
   }
   h4 {
-    font: 300 22px/24px 'Open Sans', Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
     padding-bottom: 23px;
+
   }
    h5 {
-    font: 300 20px/40px 'Open Sans', Arial,sans-serif;
+    font-size: 20px;
+    line-height: 40px;
     padding-bottom: 5px;
+
   }
    h6 {
-    font: 300 36px/36px 'Open Sans', Arial,sans-serif;
+    font-size: 36px;
+    line-height: 36px;
     padding-bottom: 18px;
   }
 
+
   p {
-    font: 16px/20px 'Open Sans', Arial,sans-serif;
+    font-size: 16px;
+    line-height: 20px;
     padding-bottom: 20px;
     margin: 0;
   }
@@ -94,9 +104,6 @@
 /* --------------------------------------------
         6. Content
    -------------------------------------------- */
-.container {
-  padding-bottom: 50px;
-}
 .method li {
 	padding-bottom: 14px;
 }
@@ -185,14 +192,15 @@
   font-size: 12px;
   line-height: 18px;
 }
+.countdown_wr_text {
+    top: -12px;
+    left: 270px;
+}
 .countdown_wr:hover .countdown_wr_text {
     top: -12px;
     left: 270px;
 }
-.countdown_wr_text.animated {
-  top: -12px;
-    left: 270px;
-}
+
 .box_ul li {
   background-position: 0 10px;
 }
@@ -201,23 +209,432 @@
 }
 
 
+
+
+
+
+
+
+
 @media only screen and (max-width: 1300px) {
   
-  .container {
+.container {
     width: 768px;
 }
-  #header .container {
-    width: 970px;
+#header .container {
+    width: 930px;
+}
+  h2 {
+    font-size: 23px;
+    line-height: 30px;
+
   }
+   h3 {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 26px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 20px;
+  }
+   h5 {
+    font: 300 20px/40px 'Open Sans', Arial,sans-serif;
+    padding-bottom: 5px;
+  }
+   h6 {
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 16px;
+  }
+.heder_box_1  {
+  width: 180px;
+  padding-top: 12px;
+}
+.heder_box_2 {
+  width: 160px;
+  padding-top: 12px;
+}
+.heder_box_2 span {
+  font-size: 14px;
+    line-height: 20px;
+}
+.heder_box_2 em {
+  top: 53px;
 }
 
+.method li img {
+  height: 50px;
+  width: 50px;
+  margin-right: 23px;
+}
+.method li {
+  padding-bottom: 20px;
+}
+.method li p {
+    font: 300 20px/20px 'Open Sans', Arial,sans-serif;
+    padding-top: 3px;
+}
+.method li p span {
+    font: 400 14px/25px 'Open Sans', Arial,sans-serif;
+}
+.box_1_right_ins_cont {
+    padding: 15px 15px;
+}
+
+.persons_number_resp span {
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+}
+.persons_number_resp .persons_number_poz_2 {
+  left: 76px;
+}
+.persons_number_resp .persons_number_poz_3 {
+  left: 145px;
+}
+.persons_number_resp .count_people_signed_up_style {
+  letter-spacing: 56px;
+  font-size: 24px;
+  line-height: 50px;
+  padding-left: 19px;
+  height: auto;
+}
+.persons_number_resp {
+  padding-top: 15px;
+  padding-bottom: 8px;
+}
+.persons_number_resp .add_persons_number p {
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.box_ul li {
+    font: 20px/38px 'Open Sans', Arial,sans-serif;
+    line-height: 30px;
+    font-size: 16px;
+    background-position: 0 6px;
+}
+.box_2_img img {
+  width: 354px;
+}
+.box_3_img img {
+  width: 290px;
+}
+.showing_fa {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+.counter_item .counter {
+    font-size: 40px;
+    line-height: 40px;
+}
+.showing_box p {
+  font-size: 18px;
+}
+.owl-carousel {
+  padding-top: 0;
+}
+.reviews_box li:not(:last-child) {
+    margin-bottom: 25px;
+}
+.owl-dots {
+  padding-top: 15px;
+}
+.box_5_button_poz {
+  margin-left: 0;
+}
+.white_button_resp {
+  height: 36px;
+    font: 600 16px/36px 'Open Sans', Arial,sans-serif;
+    padding: 0 12px;
+}
+.help_box p {
+  font-size: 20px;
+  line-height: 20px;
+}
+.box_7 h6, .box_8 h6 {
+    line-height: 24px;
+}
+.box_7  .yellow_button, .box_8  .yellow_button  {
+  font-size: 14px !important;
+}
+.ClassyCountdown-value span {
+  font-size: 10px !important;
+  top: 35px;
+}
+.ClassyCountdownDemo {
+  margin-bottom: 30px;
+  margin-top: 13px;
+}
+.countdown_wr_text {
+    top: -16px;
+    left: 190px;
+    padding: 8px 10px;
+}
+.countdown_wr:hover .countdown_wr_text {
+    top: -16px;
+    left: 190px;
+}
+.video_img_sm img {
+  width: 226px;
+}
+.phon_form p {
+  font-size: 11px;
+  padding-bottom: 0;
+  padding-top: 6px;
+  white-space: nowrap;
+
+}
+.cont_resp_box_7_8 p, .cont_resp_box_7_8 li {
+  font-size: 12px;
+  line-height: 18px;
+}
+.cont_resp_box_7_8 li {
+  -webkit-background-size: 8px 6px;
+  background-size: 8px 6px;
+  padding-left: 15px;
+}
+
+.pattern_blue {
+  padding: 30px 40px; 
+}
+.lightblue_blue {
+  padding-bottom: 30px;
+}
+.lightblue_blue textarea {
+  height: 180px;
+}
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+
+#header .container {
+    width: 768px;
+}
+.header_button_box {
+  margin: 0 15px;
+}
+.heder_box_1  {
+  width: 160px;
+}
+.heder_box_2 {
+  width: 150px;
+}
+.logo {
+  padding-top: 12px;
+}
+.logo a {
+  width: 169px;
+    height: 39px;
+  background-size: 169px 39px;
+}
+.nav_wrap {
+  display: none !important;
+}
+
+}
+
+/*
 @media only screen and (max-width: 992px) {
- body{min-width:768px;}
-
+.container {
+    width: 768px;
 }
+
+}*/
 
 @media only screen and (max-width: 767px) {
- body{min-width:420px;}
+ .container, #header .container{
+    width: 420px;
+}
+header {
+  padding: 0px 0;
+  height: 65px;
+}
+.pp-tableCell {
+  padding: 75px 0 20px;
+}
+h2 {
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 12px;
+}
+h4 {
+    font-size: 22px;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+h5 {
+  line-height: 26px;
+}
+h6 {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 8px;
+}
+.next_slide_text {
+  display: none;
+}
+#next_slide {
+  left: auto;
+  right: 0px;
+}
+.heder_box_1, .heder_box_2  {
+  display: none;
+}
+.yellow_button {
+  padding: 0 15px;
+}
+
+.header_h2_resp {
+  text-align: center;
+}
+.method {
+  margin-top: 5px;
+}
+.method li p span {
+  display: none;
+}
+.method li img {
+  float: none;
+  margin: 0;
+}
+.method li {
+  text-align: center;
+  float: left;
+  width: 120px;
+  margin: 0 5px;
+}
+.method li p {
+  font-size: 16px;
+  line-height: 16px;
+}
+.persons_number {
+  display: none; 
+}
+.count_people_signed_up_resp {
+      display: inline-block;   
+}
+.box_1_right_ins_cont p {
+  padding-bottom: 8px;
+}
+.box_1_right_ins_cont {
+  padding: 15px 20px 5px 20px;
+}
+.box_2_img img {
+    width: 390px;
+}
+.box_3_img img {
+    width: 180px;
+}
+.showing_box .col-sm-3 {
+  width: 25%;
+  float: left;
+}
+.showing_box p {
+    font-size: 12px;
+    line-height: 16px;
+}
+.counter_item .counter {
+    font-size: 26px;
+    line-height: 26px;
+}
+.showing_box {
+    padding-top: 15px;
+}
+.owl-carousel {
+    padding: 0 50px;
+}
+.reviews_frame {
+  float: none;
+  margin-bottom: 10px;
+}
+.reviews_frame span {
+  display: none;
+}
+.reviews_frame img {
+  height: 65px;
+  width: 93px;
+}
+.reviews_box p {
+  font-size: 12px;
+  line-height: 18px;
+  padding-bottom: 0;
+}
+.reviews_box li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.owl-nav>div {
+    margin-top: -12px;
+    width: 34px !important;
+    height: 34px !important;
+    background-size: 34px 34px !important;
+}
+.box_5_button_poz {
+  width: 170px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.reviews_box {
+  margin: 0;
+}
+.h_3_resp {
+  font-size: 22px;
+  line-height: 22px;
+}
+input:not([type="radio"]):not([type="checkbox"]) {
+    height: 45px;
+}
+.box_6_form input {
+  margin-bottom: 15px;
+}
+.yellow_button  {
+  height: 45px;
+  line-height: 45px;
+}
+.input_button {
+    height: 45px !important;
+    line-height: 45px !important;
+    font-size: 16px !important;
+}
+.button_50 {
+  width: 100%;
+}
+.box_6_form {
+  padding-bottom: 10px;
+}
+.help_box_ins_1, .help_box_ins_2 {
+  margin-bottom: 10px;
+  padding-left: 0;
+  background-image: none;
+  
+}
+.help_box em {
+  display: none;
+}
+.help_box p {
+  font-size: 16px;
+}
+.help_box {
+  padding-bottom: 15px;
+}
+.ClassyCountdown-value span {
+  font-size: 14px !important;
+  top: 52px !important;
+}
+.phon_form p {
+  padding-bottom: 10px;
+}
+
 }
 
 @media only screen and (max-width: 479px) {

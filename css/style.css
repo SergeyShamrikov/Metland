@@ -186,7 +186,9 @@
 .section_content {
     overflow: hidden;
    }
-
+.pp-tableCell {
+  padding: 110px 0 100px;
+}
    #next_slide{
         outline: none;
         position: fixed;
@@ -962,6 +964,10 @@ input[type=email] {
       letter-spacing: 63px;
       padding-left: 29px;
     }
+    .count_people_signed_up_resp {
+      display: none;
+      
+    }
     
     .wheel_speed_1 {
     z-index: 100;
@@ -1223,12 +1229,13 @@ input[type=email] {
   width: 140px;
   padding: 12px 18px;
   position: absolute;
+  z-index: 1;
   top: -2px;
   left: 330px;
   background:  url(../images/opacity.png) 0 0 repeat;
-
+  opacity: 0 !important;
 }
-.countdown_wr_text.animated {
+/*.countdown_wr_text.animated {
   display: block;
   left: 330px;
   opacity: 1;
@@ -1236,7 +1243,7 @@ input[type=email] {
 .countdown_wr_text {
   opacity: 0;
   left: 0;
-}
+}*/
 .countdown_wr_text em {
   height: 19px;
   width: 10px;
@@ -1253,7 +1260,8 @@ input[type=email] {
 }
 .countdown_wr:hover .countdown_wr_text{
   display: block;
-  opacity: 1;
+  opacity: 1 !important;
+  top: -2px;
   left: 330px;
 }
 
