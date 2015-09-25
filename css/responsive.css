@@ -196,10 +196,7 @@
     top: -12px;
     left: 270px;
 }
-.countdown_wr:hover .countdown_wr_text {
-    top: -12px;
-    left: 270px;
-}
+
 
 .box_ul li {
   background-position: 0 10px;
@@ -328,6 +325,9 @@
 .box_3_img img {
   width: 290px;
 }
+.box_3_img {
+  text-align: center;
+}
 .showing_fa {
     font-size: 48px;
     margin-bottom: 12px;
@@ -379,10 +379,7 @@
     left: 190px;
     padding: 8px 10px;
 }
-.countdown_wr:hover .countdown_wr_text {
-    top: -16px;
-    left: 190px;
-}
+
 .video_img_sm img {
   width: 226px;
 }
@@ -440,6 +437,9 @@
 }
 .nav_wrap {
   display: none !important;
+}
+#video {
+  width: 768px;
 }
 
 }
@@ -556,6 +556,8 @@ h6 {
 }
 .reviews_frame {
   float: none;
+  margin: 0 auto;
+  width: 95px;
   margin-bottom: 10px;
 }
 .reviews_frame span {
@@ -634,9 +636,154 @@ input:not([type="radio"]):not([type="checkbox"]) {
 .phon_form p {
   padding-bottom: 10px;
 }
+.phon_form_arrow {
+  display: none;
+  
+}
+.countdown_wr_text {
+    top: 95px;
+    left: 10px;
+    width: 320px;
+    padding: 12px 18px;
+    background-image: none;
+    background-color: #111;
+}
+.countdown_wr_text em {
+  background-image: none;
+  position: absolute;
+content: '';
+right: auto;
+top: -10px;
+left: 20px;
+margin: 0;
+width: 0px;
+height: 0px;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-bottom: 10px solid #111;
+}
+.pattern_blue {
+  width: 390px;
+}
+.pattern_blue .contactform {
+  margin-bottom: 12px;
+}
+.lightblue_blue {
+  width: 390px;
+}
+.lightblue_blue_resp_inp{
+  margin-bottom: 20px;
+}
+.lightblue_blue textarea {
+    height: 120px;
+}
+.pattern_read {
+  width: 390px;
+}
+.pattern_read button {
+  margin-top: 0;
+}
+.video_img_sm {
+  margin-bottom: 20px;
+}
+#video {
+  width: 390px;
+}
 
 }
 
 @media only screen and (max-width: 479px) {
- body{min-width:300px;}
+
+.container, #header .container{
+    width: 300px;
 }
+
+h3 {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 16px;
+}
+
+header {
+  padding: 0px 0;
+  height: 52px;
+}
+.pp-tableCell {
+  padding: 65px 0 20px;
+}
+.logo a {
+    width: 120px;
+    height: 28px;
+    background-size: 120px 28px;
+}
+.yellow_button {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.header_button {
+    height: 35px !important;
+    line-height: 35px !important;
+    font-size: 12px !important;
+}
+.method li {
+  width: 80px;
+}
+.method li p {
+  font-size: 14px;
+  line-height: 14px;
+}
+.box_2_img img {
+    width: 270px;
+}
+.showing_box .col-sm-3 {
+  width: 50%;
+}
+.phon_form .col-xs-4{
+  width: 100%;
+}
+.ClassyCountdown-value span {
+  font-size: 12px   !important;
+  top: 36px !important;
+}
+.countdown_wr_text {
+  top: 65px;
+  width: 250px;
+}
+.countdown_wr_text em {
+  left: 10px;
+}
+
+
+
+.pattern_blue {
+  width: 270px;
+  padding: 20px;
+}
+.pattern_blue .contactform {
+  margin-bottom: 12px;
+}
+.pattern_blue .yellow_button {
+  font-size: 12px;
+}
+.add_persons_number_pop_up {
+  width: 210px;
+}
+.lightblue_blue {
+  width: 270px;
+}
+.lightblue_blue_resp_inp{
+  margin-bottom: 20px;
+}
+.lightblue_blue textarea {
+    height: 120px;
+}
+.pattern_read {
+  width: 270px;
+  padding: 20px;
+}
+#video {
+  width: 270px;
+}
+}
+

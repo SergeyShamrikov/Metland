@@ -759,10 +759,7 @@ input[type=email] {
    /* --------------------------------------------
         5.5. Modal Window
    -------------------------------------------- */
-       #entry_webinar{
-            width: 460px;
-           
-       }
+
        .pattern_blue{
         width: 460px;
             background: url(../images/pattern_blue.jpg) 0 0 repeat;
@@ -786,10 +783,6 @@ input[type=email] {
             margin-top: 10px;
         }
        
-
-       #feedback {
-        width: 865px;
-       }
 
        .lightblue_blue {
           background:  url(../images/pattern_green.jpg) 0 0 repeat;
@@ -1234,6 +1227,8 @@ input[type=email] {
   left: 330px;
   background:  url(../images/opacity.png) 0 0 repeat;
   opacity: 0 !important;
+  display: none;
+  
 }
 /*.countdown_wr_text.animated {
   display: block;
@@ -1261,8 +1256,6 @@ input[type=email] {
 .countdown_wr:hover .countdown_wr_text{
   display: block;
   opacity: 1 !important;
-  top: -2px;
-  left: 330px;
 }
 
 
