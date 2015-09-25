@@ -14,7 +14,7 @@
 
 		try{
 
-			if(!filter_var($email, FILTER_VALIDATE_EMAIL)) throw new Exception("Your email address is incorrect!");
+			if(!filter_var($email, FILTER_VALIDATE_EMAIL)) throw new Exception("Ваш адрес электронной почты неверен!");
 
 		}
 		catch(Exception $e){
@@ -30,8 +30,8 @@
 		   			 	'Reply-To: Joker@example.com' . "\r\n";
 		   	$msg = "Name: $name\n" . "Email address: $email\nMessage: $message";
 
-			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Your message has been successfully sent!");
-			else throw new Exception("Connection to server is failed!");
+			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Ваше сообщение было успешно отправлено!");
+			else throw new Exception("Подключение к серверу не удалось!");
 
 		}
 		catch(Exception $e){

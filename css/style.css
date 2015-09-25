@@ -183,12 +183,25 @@
     width: 1170px;
     margin: 0 auto;
    }
-.section_content {
+
+   .section_content{
     overflow: hidden;
    }
-.pp-tableCell {
-  padding: 110px 0 100px;
-}
+
+   .section_content:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    margin-left: -5px;
+   }
+
+    .section_inner{
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      padding: 110px 0 100px;
+    }
    #next_slide{
         outline: none;
         position: fixed;

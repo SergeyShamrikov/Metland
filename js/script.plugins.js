@@ -5,27 +5,29 @@
 	$(document).ready(function(){
 
         /* ------------------------------------------------
-                Pagepiling
+                Onepage Scroll
         ------------------------------------------------ */
-            $('#content').pagepiling({
-                menu: "#navigation",
-                sectionsColor: [],
-                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
-                scrollingSpeed: 500,
-                navigation: false,
-                sectionSelector: '.section_content',
 
-                //events
-                onLeave: function(index, nextIndex, direction){
+            $("#content").onepage_scroll({
+               sectionContainer: ".section_content",     
+               easing: "ease",                  
+               animationTime: 1000,             
+               pagination: false,                
+               beforeMove: function(index) {},  
+               afterMove: function(index) {
 
-                    var text = $(".section_content").eq(nextIndex).attr("data-text");
-                    $("#next_slide").find(".next_slide_text").text(text); 
+                    var text = $(".section_content").eq(index).attr("data-text"),
+                        id = $(".section_content").eq(index-1).attr('id');
 
-                },
-                afterLoad: function(anchorLink, index){
+                    // nav
+                    $("[data-menuanchor='"+id+"']").addClass('active').siblings().removeClass('active');
 
+                    // text in button #next_slide
+                    $("#next_slide").find(".next_slide_text").text(text);
+
+                    // hide-show end counter 
                     var activSlide = $(".section_content").eq(index-1),
-                        count = activSlide.find('.counter').length, 
+                        count = activSlide.find('.counter.first_cout').length, 
                         bodyClass = activSlide.attr("data-hide");
 
                     $("body").removeClass("hide_header_btn hide_nav hide_next_btn").addClass(bodyClass);
@@ -37,14 +39,22 @@
                             var count = $(this).attr('data-amount');
 
                             $(this).animateNumber({ number: count },1000);
+
+                            $(this).removeClass('first_cout');
                         });
 
                     }
-                }
+
+               },   
+               loop: false,                     
+               keyboard: true,                  
+               responsiveFallback: 768,        
+               direction: "vertical"              
             });
 
+
         /* ------------------------------------------------
-                End of Pagepiling
+                End of Onepage Scroll
         ------------------------------------------------ */
 
 		/* ------------------------------------------------

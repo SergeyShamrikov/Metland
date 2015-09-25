@@ -11,6 +11,7 @@
 			self.contactForm.init();
 			self.hoverPeople();
 			self.nextButton();
+			self.navigation();
 
 		},
 
@@ -100,7 +101,7 @@
 
 					if($(el).val() == ""){
 
-						message += "All required fields must be filled! <br>";
+						message += "Все необходимые поля должны быть заполнены! <br>";
 						return false;
 
 					}
@@ -126,7 +127,7 @@
 
 				var amount = el.data('min-characters');
 
-				return el.val().length < amount ? '"'+el.data('field-name') + '"  field should contain minimum '+amount+' characters!' + "<br>" : "";
+				return el.val().length < amount ? '"'+el.data('field-name') + '"  поле должно содержать минимум '+amount+' символов!' + "<br>" : "";
 
 			},
 
@@ -246,7 +247,23 @@
 
 	    	$("#next_slide").on("click",function(){
 
-	    		$.fn.pagepiling.moveSectionDown();
+	    		$("#content").moveDown();
+
+	    	});
+
+	    },
+
+
+	    navigation : function(){
+
+	    	var self = this;
+
+	    	$("#navigation>li").on("click",function(){
+
+	    		var id = $(this).attr("data-menuanchor"),
+	    			index = $("#"+id).index();
+
+	    		$("#content").moveTo(index+1);   		
 
 	    	});
 
