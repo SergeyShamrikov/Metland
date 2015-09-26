@@ -514,7 +514,7 @@ h6 {
 .blue_bg {
   padding-top: 40px;
 }
-.next_slide_text {
+.next_slide_text, #next_slide {
   display: none;
 }
 #next_slide {
@@ -523,6 +523,10 @@ h6 {
 }
 .heder_box_1, .heder_box_2  {
   display: none;
+}
+body.hide_header_btn .header_reg {
+  visibility: visible;
+  opacity: 1;
 }
 .yellow_button {
   padding: 0 15px;
