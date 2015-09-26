@@ -6,9 +6,10 @@
 		extract($_POST);
 
 		$name = htmlspecialchars($cf_name);
+		$phone = htmlspecialchars($cf_phone);
 		$email = htmlspecialchars($cf_email);
 		$message = htmlspecialchars($cf_message);
-		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Joker. Contact form";
+		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Тест. Contact form";
 		$headers = "";
 		
 
@@ -26,9 +27,9 @@
 
 		try{
 
-			$headers .= 'From: Joker@example.com' . "\r\n" .
-		   			 	'Reply-To: Joker@example.com' . "\r\n";
-		   	$msg = "Имя: $name\n" . "Email: $email\nСообщение: $message";
+			$headers .= 'From: test@test.com' . "\r\n" .
+		   			 	'Reply-To: sergey.shamrikov@gmail.com' . "\r\n";
+		   	$msg = "Имя: $name\n" . "Email: $email\n" . "Телефон: $phone\n" . "Сообщение: $message";
 
 			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Ваше сообщение было успешно отправлено!");
 			else throw new Exception("Подключение к серверу не удалось!");
