@@ -544,7 +544,9 @@ body.hide_header_btn .header_reg {
 .yellow_button {
   padding: 0 15px;
 }
-
+#header {
+  background: rgba(0,0,0,0.1);
+}
 .header_h2_resp {
   text-align: center;
 }
