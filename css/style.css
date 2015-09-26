@@ -171,12 +171,15 @@
         visibility: hidden;
     }
 
-    #preloader img{
+    #preloader .preloader_img{
         position: absolute;
+        width: 64px;
+        height: 64px;
         top: 50%;
         left: 50%;
-        margin-left: -37px;
-        margin-top: -37px;
+        margin-left: -32px;
+        margin-top: -32px;
+        /*background: url(../images/persons_number_poz_3.png) 0 0 no-repeat;*/
     }
 
   .main  {
