@@ -1,5 +1,5 @@
 <?php 
-	$user_email = "support@companyname.com";
+	$user_email = "shamrikov.01@gmail.com";
 	
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
@@ -28,7 +28,7 @@
 
 			$headers .= 'From: Joker@example.com' . "\r\n" .
 		   			 	'Reply-To: Joker@example.com' . "\r\n";
-		   	$msg = "Name: $name\n" . "Email address: $email\nMessage: $message";
+		   	$msg = "Имя: $name\n" . "Email: $email\nСообщение: $message";
 
 			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Ваше сообщение было успешно отправлено!");
 			else throw new Exception("Подключение к серверу не удалось!");

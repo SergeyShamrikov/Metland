@@ -20,7 +20,7 @@
 			var self = this;
 
 			self.countPeopleSignedUp();
-			// self.scrollContent.init();
+			self.counters();
 			self.preloader();
 
 		},
@@ -31,6 +31,43 @@
 			
 			// self.contentHide();
 		},
+
+
+		/**
+		**	Counters
+		**/
+
+	   	counters: function(){
+
+			var counter = $('.counter'),
+				$wd = $(window),
+				wh = $wd.height() / 1.5;
+
+			if(!counter.length || $wd.width() >= 768) return;
+
+
+			$(document).on("scroll",function(){
+
+				counter.each(function(i, el){
+
+					var $this = $(el),
+						count = $this.attr('data-amount');
+
+					if($wd.scrollTop() > $this.offset().top - wh && !$this.hasClass('counted')){
+
+						$this.addClass('counted');
+
+		                $this.animateNumber({ number: count },1000);
+						
+					}
+
+	            });
+
+			});
+
+		},
+
+
 
 		/**
 		**	Preloader
