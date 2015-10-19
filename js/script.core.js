@@ -136,6 +136,8 @@
 
 				collection.each(function(i, el){
 
+					var $this = $(this);
+
 					if($(el).val() == ""){
 
 						message += "Все поля должны быть заполнены! <br>";

@@ -31,7 +31,10 @@
 		   			 	'Reply-To: sergey.shamrikov@gmail.com' . "\r\n";
 		   	$msg = "Имя: $name\n" . "Email: $email\n" . "Телефон: $phone\n" . "Сообщение: $message";
 
-			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Ваше сообщение было успешно отправлено!");
+			if(mail($user_email, $subject, $msg, $headers)){
+				throw new Exception("Ваше сообщение было успешно отправлено!");
+				header("Location: success.html"); exit;	
+			} 
 			else throw new Exception("Подключение к серверу не удалось!");
 
 		}
