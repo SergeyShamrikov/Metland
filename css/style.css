@@ -867,6 +867,11 @@ input[type=email] {
     .pattern_read button{
             margin-top: 10px;
         }
+
+        .informed input:not([type="radio"]):not([type="checkbox"]){
+          border: 2px solid #d00;
+        }
+        
 /* ------------------------------------------------
 
     6. Content
