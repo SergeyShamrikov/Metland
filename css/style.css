@@ -577,6 +577,16 @@ input[type=email] {
     outline: none;
 }
 
+input:not([type="radio"]):not([type="checkbox"]).error{
+  -webkit-box-shadow: 0 0 10px rgba(255,0,0,1);
+  box-shadow: 0 0 10px rgba(255,0,0,1);
+}
+
+label.error{
+  margin-top: 5px;
+  color: #f00;
+}
+
 .input_button {
     height: 60px !important;
     line-height: 60px !important;
@@ -764,7 +774,7 @@ input[type=email] {
             overflow: hidden;
         }
 
-        .reviews_frame .video_play img{
+        .video_play img{
             max-width: 100%;
         }
         .reviews_frame span{

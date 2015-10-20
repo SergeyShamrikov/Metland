@@ -8,7 +8,7 @@
 
 			var self = this;
 
-			self.contactForm.init();
+			// self.contactForm.init();
 			self.hoverPeople();
 			self.nextButton();
 			self.navigation();

@@ -232,6 +232,177 @@
 				End of ClassyCountdown
 		------------------------------------------------ */
 
+        /* ------------------------------------------------
+                validate
+        ------------------------------------------------ */
+
+            // enroll form
+
+            $("#enroll_form").validate({
+
+               rules:{
+
+                    cf_name:{
+                        required: true,
+                        minlength: 4,
+                        maxlength: 16,
+                    },
+
+                    cf_email:{
+                        required: true,
+                        email:true,
+                    },
+               },
+
+               messages:{
+
+                    cf_name:{
+                        required: "Это поле обязательно для заполнения",
+                        minlength: "Логин должен быть минимум 4 символа",
+                        maxlength: "Максимальное число символо - 16",
+                    },
+
+                    cf_email:{
+                        required: "Это поле обязательно для заполнения",
+                        email: "Ваш адрес электронной почты неверен!"
+                    },
+
+               },
+
+               submitHandler: function(form) {
+                    form.preventDefault();
+
+                    $.ajax({
+                        url: 'php/contact-send.php', 
+                        type: 'post',
+                        data: $this.serialize(),
+                        success: function(data){
+                            document.location.href = "http://zanin-k.ru/test/Metland/success.html";
+                        }
+                    });
+                }
+
+            });
+
+            // enroll form 2
+
+            $("#enroll_form1").validate({
+
+               rules:{
+
+                    cf_name:{
+                        required: true,
+                        minlength: 4,
+                        maxlength: 16,
+                    },
+
+                    cf_email:{
+                        required: true,
+                        email:true,
+                    },
+               },
+
+               messages:{
+
+                    cf_name:{
+                        required: "Это поле обязательно для заполнения",
+                        minlength: "Логин должен быть минимум 4 символа",
+                        maxlength: "Максимальное число символо - 16",
+                    },
+
+                    cf_email:{
+                        required: "Это поле обязательно для заполнения",
+                        email: "Ваш адрес электронной почты неверен!"
+                    },
+
+               },
+
+               submitHandler: function(form) {
+                    form.preventDefault();
+
+                    $.ajax({
+                        url: 'php/contact-send.php', 
+                        type: 'post',
+                        data: $this.serialize(),
+                        success: function(data){
+                            document.location.href = "http://zanin-k.ru/test/Metland/success.html";
+                        }
+                    });
+                }
+
+            });
+
+            // Reviews form
+
+            $("#reviews_form").validate({
+
+               rules:{
+
+                    cf_name:{
+                        required: true,
+                        minlength: 4,
+                        maxlength: 16,
+                    },
+
+                    cf_email:{
+                        required: true,
+                        email:true,
+                    },
+
+                    cf_phone:{
+                        required: true,
+                    },
+
+                    cf_message:{
+                        required: true,
+                        minlength: 20,
+                    },
+               },
+
+               messages:{
+
+                    cf_name:{
+                        required: "Это поле обязательно для заполнения",
+                        minlength: "Логин должен быть минимум 4 символа",
+                        maxlength: "Максимальное число символо - 16",
+                    },
+
+                    cf_email:{
+                        required: "Это поле обязательно для заполнения",
+                        email: "Ваш адрес электронной почты неверен!"
+                    },
+
+                    cf_phone:{
+                        required: "Это поле обязательно для заполнения",
+                    },
+
+                    cf_message:{
+                        required: "Это поле обязательно для заполнения",
+                        minlength: "Минимальное число символо - 20"
+                    },
+
+               },
+
+               submitHandler: function(form) {
+                    form.preventDefault();
+
+                    $.ajax({
+                        url: 'php/reviews.php', 
+                        type: 'post',
+                        data: $this.serialize(),
+                        success: function(data){
+                            var type = data.indexOf("success") != -1 ? 'success' : 'error';
+                            self.showMessage(data, type);
+                        }
+                    });
+                }
+
+            });
+
+        /* ------------------------------------------------
+                End of validate
+        ------------------------------------------------ */
+
 	});
 
 	$(window).load(function(){

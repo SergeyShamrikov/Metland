@@ -9,7 +9,7 @@
 		$phone = htmlspecialchars($cf_phone);
 		$email = htmlspecialchars($cf_email);
 		$message = htmlspecialchars($cf_message);
-		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Тест. Contact form";
+		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Тест. Reviews form";
 		$headers = "";
 		
 
@@ -31,9 +31,10 @@
 
 			$headers .= 'From: test@test.com' . "\r\n" .
 		   			 	'Reply-To: edbillow@gmail.com' . "\r\n";
-		   	$msg = "Имя: $name\n" . "Email: $email";
+		   	$msg = "Имя: $name\n" . "Email: $email\n" . "Телефон: $phone\n" . "Сообщение: $message";
 
-			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Your message has been successfully sent!");
+			if(mail($user_email, $subject, $msg, $headers)) header("Location: http://zanin-k.ru/test/Metland/success.html");
+				//  Exception("Ваше сообщение было успешно отправлено!");
 			else throw new Exception("Подключение к серверу не удалось!");
 
 		}
