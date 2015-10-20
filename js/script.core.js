@@ -121,7 +121,7 @@
 
 						var type = data.indexOf("success") != -1 ? 'success' : 'error';
 						self.showMessage(data, type);
-
+						document.location.href = "http://zanin-k.ru/test/Metland/success.html";
 					}
 				});
 
