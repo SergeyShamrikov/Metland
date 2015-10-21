@@ -41,7 +41,7 @@
 
 			var counter = $('.counter'),
 				$wd = $(window),
-				wh = $wd.height() / 1.5;
+				wh = $wd.height() / 1.1;
 
 			if(!counter.length || $wd.width() >= 768) return;
 
