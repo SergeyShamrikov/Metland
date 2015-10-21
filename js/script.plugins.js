@@ -384,6 +384,7 @@
                },
 
                submitHandler: function(form) {
+                    
                     form.preventDefault();
 
                     $.ajax({
@@ -391,8 +392,8 @@
                         type: 'post',
                         data: $this.serialize(),
                         success: function(data){
-                            var type = data.indexOf("success") != -1 ? 'success' : 'error';
-                            self.showMessage(data, type);
+                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
+                            // self.showMessage(data, type);
                         }
                     });
                 }

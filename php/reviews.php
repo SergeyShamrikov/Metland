@@ -33,9 +33,9 @@
 		   			 	'Reply-To: edbillow@gmail.com' . "\r\n";
 		   	$msg = "Имя: $name\n" . "Email: $email\n" . "Телефон: $phone\n" . "Сообщение: $message";
 
-			if(mail($user_email, $subject, $msg, $headers)) header("Location: http://zanin-k.ru/test/Metland/success.html");
-				//  Exception("Ваше сообщение было успешно отправлено!");
+			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Ваше сообщение было успешно отправлено!");
 			else throw new Exception("Подключение к серверу не удалось!");
+
 
 		}
 		catch(Exception $e){
