@@ -238,13 +238,7 @@
         ------------------------------------------------ */
 
             // enroll form
-            var options = { 
-                        type: 'post', 
-                        url:        'php/contact-send.php',
-                        success:    function() { 
-                            alert('Thanks for your comment!'); 
-                        } 
-                    };
+           
             $("#enroll_form").validate({
 
                rules:{
@@ -396,6 +390,154 @@
 
                     $.ajax({
                         url: 'php/reviews.php', 
+                        type: 'post',
+                        data: $this.serialize(),
+                        success: function(data){
+                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
+                            // self.showMessage(data, type);
+                        }
+                    });
+                }
+
+            });
+
+
+        // Сall back form
+
+            $("#call_back_form").validate({
+
+               rules:{
+
+                    cf_name:{
+                        required: true,
+                        minlength: 4,
+                        maxlength: 16,
+                    },
+
+                    cf_phone:{
+                        required: true,
+                    },
+
+               },
+
+               messages:{
+
+                    cf_name:{
+                        required: "Это поле обязательно для заполнения",
+                        minlength: "Логин должен быть минимум 4 символа",
+                        maxlength: "Максимальное число символо - 16",
+                    },
+
+                    cf_phone:{
+                        required: "Это поле обязательно для заполнения",
+                    },
+
+               },
+
+               submitHandler: function(form) {
+                    
+                    form.preventDefault();
+
+                    $.ajax({
+                        url: 'php/call-back.php', 
+                        type: 'post',
+                        data: $this.serialize(),
+                        success: function(data){
+                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
+                            // self.showMessage(data, type);
+                        }
+                    });
+                }
+
+            });
+
+
+            // Questions form
+
+            $("#questions_form").validate({
+
+               rules:{
+
+                    cf_name:{
+                        required: true,
+                        minlength: 4,
+                        maxlength: 16,
+                    },
+
+                    cf_email:{
+                        required: true,
+                        email:true,
+                    },
+
+                    cf_message:{
+                        required: true,
+                        minlength: 20,
+                    },
+               },
+
+               messages:{
+
+                    cf_name:{
+                        required: "Это поле обязательно для заполнения",
+                        minlength: "Логин должен быть минимум 4 символа",
+                        maxlength: "Максимальное число символо - 16",
+                    },
+
+                    cf_email:{
+                        required: "Это поле обязательно для заполнения",
+                        email: "Ваш адрес электронной почты неверен!"
+                    },
+
+                    cf_message:{
+                        required: "Это поле обязательно для заполнения",
+                        minlength: "Минимальное число символо - 20"
+                    },
+
+               },
+
+               submitHandler: function(form) {
+                    
+                    form.preventDefault();
+
+                    $.ajax({
+                        url: 'php/questions.php', 
+                        type: 'post',
+                        data: $this.serialize(),
+                        success: function(data){
+                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
+                            // self.showMessage(data, type);
+                        }
+                    });
+                }
+
+            });
+
+        // Success phone form
+
+            $("#success_phone").validate({
+
+               rules:{
+
+                    cf_phone:{
+                        required: true,
+                    },
+               },
+
+               messages:{
+
+
+                    cf_phone:{
+                        required: "Это поле обязательно для заполнения",
+                    },
+
+               },
+
+               submitHandler: function(form) {
+                    
+                    form.preventDefault();
+
+                    $.ajax({
+                        url: 'php/success_phone.php', 
                         type: 'post',
                         data: $this.serialize(),
                         success: function(data){

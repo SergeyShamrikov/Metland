@@ -1,6 +1,6 @@
 <?php 
-	$user_email = "shamrikov.01@gmail.com";  
-	//edbillow@gmail.com
+	$user_email = "pavel.buynovskiy@gmail.com";  
+	//edbillow@gmail.com shamrikov.01@gmail.com
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 		extract($_POST);
@@ -29,7 +29,7 @@
 
 		try{
 
-			$headers .= 'From: pavel.buynovskiy@gmail.com' . "\r\n" .
+			$headers .= 'From: test@test.com' . "\r\n" .
 		   			 	'Reply-To: pavel.buynovskiy@gmail.com' . "\r\n";
 		   	$msg = "Имя: $name\n" . "Email: $email";
 

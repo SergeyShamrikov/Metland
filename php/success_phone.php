@@ -1,6 +1,6 @@
 <?php 
-	$user_email = "pavel.buynovskiy@yandex.ru";
-	
+	$user_email = "pavel.buynovskiy@gmail.com";  
+	//edbillow@gmail.com shamrikov.01@gmail.com
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 		extract($_POST);
@@ -9,7 +9,7 @@
 		$phone = htmlspecialchars($cf_phone);
 		$email = htmlspecialchars($cf_email);
 		$message = htmlspecialchars($cf_message);
-		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Тест. Reviews form";
+		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Success phone form";
 		$headers = "";
 		
 
@@ -31,11 +31,10 @@
 
 			$headers .= 'From: test@test.com' . "\r\n" .
 		   			 	'Reply-To: pavel.buynovskiy@gmail.com' . "\r\n";
-		   	$msg = "Имя: $name\n" . "Email: $email\n" . "Телефон: $phone\n" . "Сообщение: $message";
+		   	$msg = "Телефон: $phone";
 
-			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Ваше сообщение было успешно отправлено!");
+			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Your message has been successfully sent!");
 			else throw new Exception("Подключение к серверу не удалось!");
-
 
 		}
 		catch(Exception $e){

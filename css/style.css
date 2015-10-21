@@ -609,10 +609,16 @@ input:not([type="radio"]):not([type="checkbox"]).error{
   -webkit-box-shadow: 0 0 10px rgba(255,0,0,1);
   box-shadow: 0 0 10px rgba(255,0,0,1);
 }
+textarea.error{
+  -webkit-box-shadow: 0 0 10px rgba(255,0,0,1);
+  box-shadow: 0 0 10px rgba(255,0,0,1);
+}
 
 label.error{
   margin-top: 5px;
   color: #f00;
+  font-size: 13px;
+  line-height: 14px;
 }
 
 .input_button {
@@ -857,6 +863,7 @@ label.error{
           box-shadow: 0 0 8px 2px #122a2f;
           padding: 40px 40px;
           position: relative;
+          width: 636px;
        }
 
        textarea{
