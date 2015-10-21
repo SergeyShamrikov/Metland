@@ -1,5 +1,5 @@
 <?php 
-	$user_email = "pavel.buynovskiy@gmail.com";  
+	$user_email = "shamrikov.01@gmail.com";  
 	//edbillow@gmail.com
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
@@ -9,7 +9,7 @@
 		$phone = htmlspecialchars($cf_phone);
 		$email = htmlspecialchars($cf_email);
 		$message = htmlspecialchars($cf_message);
-		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Тест. Contact form";
+		$subject = isset($cf_subject) ? htmlspecialchars($cf_subject) : "Contact form";
 		$headers = "";
 		
 
@@ -29,7 +29,7 @@
 
 		try{
 
-			$headers .= 'From: test@test.com' . "\r\n" .
+			$headers .= 'From: pavel.buynovskiy@gmail.com' . "\r\n" .
 		   			 	'Reply-To: pavel.buynovskiy@gmail.com' . "\r\n";
 		   	$msg = "Имя: $name\n" . "Email: $email";
 

@@ -238,8 +238,14 @@
         ------------------------------------------------ */
 
             // enroll form
-
-            var enroll_form = $("#enroll_form").validate({
+            var options = { 
+                        type: 'post', 
+                        url:        'php/contact-send.php',
+                        success:    function() { 
+                            alert('Thanks for your comment!'); 
+                        } 
+                    };
+            $("#enroll_form").validate({
 
                rules:{
 
@@ -270,26 +276,20 @@
 
                },
 
+               submitHandler: function(form) {
+                    
+                    $(form).ajaxSubmit({
+                        type: 'post', 
+                        url:  'php/contact-send.php',
+                        success:    function() { 
+                             document.location.href = "success.html";
+                        } 
+                    });
+                }
+
+
             });
 
-            if(enroll_form.form()){
-
-                    $("#enroll_form").on("submit",function(e){
-
-                            e.preventDefault();
-
-                            var $this = $(this);
-
-                            $.ajax({
-                                url: 'php/contact-send.php', 
-                                type: 'post'
-                                
-                            });
-                    });
-
-                    
-            }
-            
 
             // enroll form 2
 
