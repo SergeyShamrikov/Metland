@@ -1,6 +1,6 @@
 <?php 
-	$user_email = "edbillow@gmail.com";
-	
+	$user_email = "pavel.buynovskiy@gmail.com";  
+	//edbillow@gmail.com
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 		extract($_POST);
@@ -30,7 +30,7 @@
 		try{
 
 			$headers .= 'From: test@test.com' . "\r\n" .
-		   			 	'Reply-To: edbillow@gmail.com' . "\r\n";
+		   			 	'Reply-To: pavel.buynovskiy@gmail.com' . "\r\n";
 		   	$msg = "Имя: $name\n" . "Email: $email";
 
 			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Your message has been successfully sent!");

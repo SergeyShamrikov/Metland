@@ -604,7 +604,7 @@ body.hide_header_btn .header_reg {
     padding-top: 15px;
 }
 .owl-carousel {
-    padding: 0 50px;
+    padding: 0 0px;
 }
 .reviews_frame {
   float: none;
@@ -628,15 +628,17 @@ body.hide_header_btn .header_reg {
   margin-bottom: 15px;
 }
 .owl-nav>div {
-    margin-top: -12px;
+  top: 100%;
+    margin-top: -32px;
     width: 34px !important;
     height: 34px !important;
     background-size: 34px 34px !important;
 }
 .box_5_button_poz {
-  width: 170px;
+  width: auto;
   margin: 0 auto;
   margin-top: 10px;
+  text-align: center;
 }
 .reviews_box {
   margin: 0;

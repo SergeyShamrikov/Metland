@@ -97,7 +97,8 @@
                     navText: [ '', '' ],
                     items:1,
                     animateIn:"bounceInRight",
-                    autoplay:true
+                    autoplay:true,
+                    autoHeight: true,
 	            });
 
 		    }
@@ -238,7 +239,7 @@
 
             // enroll form
 
-            $("#enroll_form").validate({
+            var enroll_form = $("#enroll_form").validate({
 
                rules:{
 
@@ -269,20 +270,26 @@
 
                },
 
-               submitHandler: function(form) {
-                    form.preventDefault();
-
-                    $.ajax({
-                        url: 'php/contact-send.php', 
-                        type: 'post',
-                        data: $this.serialize(),
-                        success: function(data){
-                            document.location.href = "http://zanin-k.ru/test/Metland/success.html";
-                        }
-                    });
-                }
-
             });
+
+            if(enroll_form.form()){
+
+                    $("#enroll_form").on("submit",function(e){
+
+                            e.preventDefault();
+
+                            var $this = $(this);
+
+                            $.ajax({
+                                url: 'php/contact-send.php', 
+                                type: 'post'
+                                
+                            });
+                    });
+
+                    
+            }
+            
 
             // enroll form 2
 
