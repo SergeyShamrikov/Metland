@@ -1,5 +1,5 @@
 <?php 
-	$user_email = "pavel.buynovskiy@yandex.ru";
+	$user_email = "edbillow@gmail.com";
 	
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
@@ -19,8 +19,8 @@
 
 		try{
 
-			$headers = 'From: Joker@example.com' . "\r\n" .
-		   			 	'Reply-To: pavel.buynovskiy@gmail.com' . "\r\n";
+			$headers = 'From: test@test.com' . "\r\n" .
+		   			 	'Reply-To: edbillow@gmail.com' . "\r\n";
 		   	$msg = "Email address: $email";
 
 			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Your email address has been successfully sent!");

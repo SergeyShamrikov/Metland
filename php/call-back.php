@@ -30,7 +30,7 @@
 		try{
 
 			$headers .= 'From: test@test.com' . "\r\n" .
-		   			 	'Reply-To: pavel.buynovskiy@gmail.com' . "\r\n";
+		   			 	'Reply-To: edbillow@gmail.com' . "\r\n";
 		   	$msg = "Имя: $name\n" . "Телефон: $phone";
 
 			if(mail($user_email, $subject, $msg, $headers)) throw new Exception("Your message has been successfully sent!");

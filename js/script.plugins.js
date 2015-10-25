@@ -245,8 +245,6 @@
 
                     cf_name:{
                         required: true,
-                        minlength: 4,
-                        maxlength: 16,
                     },
 
                     cf_email:{
@@ -259,8 +257,6 @@
 
                     cf_name:{
                         required: "Это поле обязательно для заполнения",
-                        minlength: "Логин должен быть минимум 4 символа",
-                        maxlength: "Максимальное число символо - 16",
                     },
 
                     cf_email:{
@@ -293,8 +289,6 @@
 
                     cf_name:{
                         required: true,
-                        minlength: 4,
-                        maxlength: 16,
                     },
 
                     cf_email:{
@@ -307,8 +301,6 @@
 
                     cf_name:{
                         required: "Это поле обязательно для заполнения",
-                        minlength: "Логин должен быть минимум 4 символа",
-                        maxlength: "Максимальное число символо - 16",
                     },
 
                     cf_email:{
@@ -341,8 +333,6 @@
 
                     cf_name:{
                         required: true,
-                        minlength: 4,
-                        maxlength: 16,
                     },
 
                     cf_email:{
@@ -364,8 +354,6 @@
 
                     cf_name:{
                         required: "Это поле обязательно для заполнения",
-                        minlength: "Логин должен быть минимум 4 символа",
-                        maxlength: "Максимальное число символо - 16",
                     },
 
                     cf_email:{
@@ -410,8 +398,6 @@
 
                     cf_name:{
                         required: true,
-                        minlength: 4,
-                        maxlength: 16,
                     },
 
                     cf_phone:{
@@ -424,8 +410,6 @@
 
                     cf_name:{
                         required: "Это поле обязательно для заполнения",
-                        minlength: "Логин должен быть минимум 4 символа",
-                        maxlength: "Максимальное число символо - 16",
                     },
 
                     cf_phone:{
@@ -460,8 +444,6 @@
 
                     cf_name:{
                         required: true,
-                        minlength: 4,
-                        maxlength: 16,
                     },
 
                     cf_email:{
@@ -479,8 +461,6 @@
 
                     cf_name:{
                         required: "Это поле обязательно для заполнения",
-                        minlength: "Логин должен быть минимум 4 символа",
-                        maxlength: "Максимальное число символо - 16",
                     },
 
                     cf_email:{
