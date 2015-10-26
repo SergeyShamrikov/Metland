@@ -277,7 +277,6 @@
                     });
                 }
 
-
             });
 
 
@@ -311,15 +310,13 @@
                },
 
                submitHandler: function(form) {
-                    form.preventDefault();
 
-                    $.ajax({
-                        url: 'php/contact-send.php', 
-                        type: 'post',
-                        data: $this.serialize(),
-                        success: function(data){
-                            document.location.href = "http://zanin-k.ru/test/Metland/success.html";
-                        }
+                    $(form).ajaxSubmit({
+                        type: 'post', 
+                        url:  'php/contact-send.php',
+                        success:    function() { 
+                             document.location.href = "success.html";
+                        } 
                     });
                 }
 
@@ -374,23 +371,19 @@
 
                submitHandler: function(form) {
                     
-                    form.preventDefault();
-
-                    $.ajax({
-                        url: 'php/reviews.php', 
-                        type: 'post',
-                        data: $this.serialize(),
-                        success: function(data){
-                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
-                            // self.showMessage(data, type);
-                        }
+                    $(form).ajaxSubmit({
+                        type: 'post', 
+                        url:  'php/reviews.php',
+                        success:    function() { 
+                             
+                        } 
                     });
                 }
 
             });
 
 
-        // Сall back form
+            // Сall back form
 
             $("#call_back_form").validate({
 
@@ -419,18 +412,15 @@
                },
 
                submitHandler: function(form) {
-                    
-                    form.preventDefault();
 
-                    $.ajax({
-                        url: 'php/call-back.php', 
-                        type: 'post',
-                        data: $this.serialize(),
-                        success: function(data){
-                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
-                            // self.showMessage(data, type);
-                        }
+                    $(form).ajaxSubmit({
+                        type: 'post', 
+                        url:  'php/call-back.php',
+                        success:    function() { 
+                             // document.location.href = "success.html";
+                        } 
                     });
+
                 }
 
             });
@@ -476,23 +466,23 @@
                },
 
                submitHandler: function(form) {
-                    
-                    form.preventDefault();
 
-                    $.ajax({
-                        url: 'php/questions.php', 
-                        type: 'post',
-                        data: $this.serialize(),
-                        success: function(data){
-                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
-                            // self.showMessage(data, type);
-                        }
+                    $(form).ajaxSubmit({
+                        type: 'post', 
+                        url:  'php/questions.php',
+                        success:    function() { 
+
+                        } 
+
                     });
+
                 }
 
             });
 
-        // Success phone form
+
+
+            // Success phone form
 
             $("#success_phone").validate({
 
@@ -501,10 +491,10 @@
                     cf_phone:{
                         required: true,
                     },
+               
                },
 
                messages:{
-
 
                     cf_phone:{
                         required: "Это поле обязательно для заполнения",
@@ -512,20 +502,33 @@
 
                },
 
-               submitHandler: function(form) {
-                    
-                    form.preventDefault();
+               submitHandler: function(form){
 
-                    $.ajax({
-                        url: 'php/success_phone.php', 
-                        type: 'post',
-                        data: $this.serialize(),
-                        success: function(data){
-                            // var type = data.indexOf("success") != -1 ? 'success' : 'error';
-                            // self.showMessage(data, type);
+                    $(form).ajaxSubmit({
+                        type: 'post', 
+                        url:  'php/success-phone.php',
+                        success : function() {
+
+                            $("#success_phone").closest(".form_box").stop().animate({
+
+                                'opacity': 0
+                                }, function(){
+
+                                    $(this).slideUp(function(){
+                                    $(this).next().show().animate({
+                                        'opacity': 1
+                                    });
+                                    $(this).remove();
+
+                                });
+
+                            });
+
                         }
+
                     });
-                }
+
+               }
 
             });
 

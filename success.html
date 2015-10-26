@@ -171,39 +171,48 @@
                                 </div>                                   
                     
                             </div>
-                            <div class="col-sm-6 col-sm-offset-2">
-                              
-                                <p class="f_z_18"><strong>Для регистрации в вебинаре введите свой телефон:</strong></p>
-                    
-                                <div class="phon_form">
-                                <div class="phon_form_arrow"></div>
-                                  <form class="contactform" novalidate id="success_phone">
-                                        <ul>
-                                            <li class="row">
-                                                <div class="col-sm-8">
-                                                    <input type="text" class="phone_mask txt_field" required name="phone" placeholder="+7 (___) ___-____">
-                                                
-                                                </div>
-                    
-                                                <div class="col-xs-4">
-                                                    <button class="btn_type small yellow_button  input_button">Отправить</button>
-                                                </div><!--/ [col] -->
-                    
-                                            </li>
-                                        </ul>
+                            
+                            <div class="form_box">
+
+                                <div class="col-sm-6 col-sm-offset-2">
+                                  
+                                    <p class="f_z_18"><strong>Для регистрации в вебинаре введите свой телефон:</strong></p>
+                                                    
+                                    <div class="phon_form">
+                                    <div class="phon_form_arrow"></div>
+                                
+                                      <form class="contactform" novalidate id="success_phone">
+                                            <ul>
+                                                <li class="row">
+                                                    <div class="col-sm-8">
+                                
+                                                        <input type="text" class="phone_mask txt_field" required name="cf_phone" placeholder="+7 (___) ___-____">
+                                                    
+                                                    </div>
+                                                    
+                                                    <div class="col-xs-4">
+                                                        <button class="btn_type small yellow_button  input_button" data-marker="кнопка отправить телефон">Отправить</button>
+                                                    </div><!--/ [col] -->
+                                                    
+                                                </li>
+                                            </ul>
                                       </form>
+                                
+                                    </div>
+                                                    
                                 </div>
-                    
-                             
+                            
+                            </div>
+                            <div class="col-sm-8 info_title">
+                                <h2>Спасибо, мы получили ваш номер!</h2>
                             </div>
                           </div>
                     
                           <div class="row">
                             <div class="col-sm-4">
                               
-                    
                                 <div class="video_img_sm">
-                                    <a href="#" class="modal_btn" data-modal="video" data-src="https://www.youtube.com/embed/3OAcJFkwvxI"><img src="images/video_img_sm.jpg" width="270" alt=""></a>
+                                    <a href="#" class="modal_btn video_play" data-modal="video" data-src="https://www.youtube.com/embed/3OAcJFkwvxI"><img src="images/youtube.jpg" width="270" alt=""></a>
                                 </div>
                     
                             </div>
@@ -245,13 +254,10 @@
             
         </div>
 
-        <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
+         <!-- - - - - - - - - - - - - - Modal Windows - - - - - - - - - - - - - - - - -->
 
-
-        <!-- - - - - - - - - - - - - - Modal Windows - - - - - - - - - - - - - - - - -->
-
-        <div class="hide">
-            
+         <div class="hide">
+             
             <div id="video">
                 
                 <div class="video_box">
@@ -262,196 +268,12 @@
 
             </div>
 
-            <div id="entry_webinar" class="pattern_blue">
-              <div class="box-modal_close arcticmodal-close">&times;</div>
-              <h4>Введите данные и вы получите доступ к <strong>бесплатному</strong> вебинару</h4>
 
-              <form class="contactform" novalidate>
-                <ul>
-                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-12">
-                            <input type="text" placeholder="Имя" required name="cf_name">
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-12">
-                            <input type="email" placeholder="E-mail" required name="cf_email"> 
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-xs-12">
-                            <button class="yellow_button">Записаться бесплатно</button>
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                </ul>
-                
+         </div>
+        <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
 
-              </form>
+        <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
 
-              <!-- <p><strong>317</strong> человек записалось сегодня</p> -->
-
-                <div class="persons_number persons_number_pop_up">
-                                    
-                    <span class="persons_number_poz_1 wheel_speed_1"></span>
-                    <span class="persons_number_poz_2 wheel_speed_2"></span>
-                    <span class="persons_number_poz_3 wheel_speed_3"></span>
-                    <div class="count_people_signed_up count_people_signed_up_style"></div>
-                    <div class="clear"></div>
-        
-                </div>
-        
-                <div class="align_center">
-        
-                    <p><span class="count_people_signed_up count_people_signed_up_resp d_ib">317</span> человек записалось сегодня</p>
-        
-                </div>
-        
-                <div class="add_persons_number add_persons_number_pop_up name_people_signed_box">
-        
-                    <div class="table_row">
-                        <div class="table_img">
-                            <img src="images/add_persons_number_icon.png" height="48" width="48" alt="" class="animated">
-                        </div>
-                        <p><strong class="name"></strong> записался  на семинар только что</p>
-                    </div>
-        
-                </div>
- 
-            </div>
-
-            <div id="feedback" class="lightblue_blue">
-              <div class="box-modal_close arcticmodal-close">&times;</div>
-              <form class="contactform" novalidate>
-                <ul>
-                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-6 lightblue_blue_resp_inp">
-                            <input type="text" placeholder="Имя" required name="cf_name">
-                        </div><!--/ [col] -->
-
-                        <div class="col-sm-6">
-                            <input type="email" placeholder="E-mail" required name="cf_email"> 
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-6">
-                            <!-- <input type="text"  name="phone" placeholder="Введите ваш телефон"> -->
-                            <input type="text" placeholder="Телефон" required name="cf_phone" class="phone_mask"> 
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-
-                        <div class="col-xs-12">  
-                            <textarea placeholder="Введите текст" rows="3" required name="cf_message" data-field-name="Message" data-min-characters="20" ></textarea>
-                            
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-xs-12">
-                            <button class="btn_type small yellow_button sm_button input_button">отправить</button>
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                </ul>
-            </form>
-            </div>
-            
-
-            <div id="entry_phone" class="pattern_read">
-              <div class="box-modal_close arcticmodal-close">&times;</div>
-              <h4>ОБРАТНЫЙ ЗВОНОК</h4>
-
-              <form class="contactform" novalidate>
-                <ul>
-                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-12">
-                            <input type="text" placeholder="Имя" required name="cf_name">
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-12">
-                            <input type="text" class="phone_mask txt_field" required name="phone" placeholder="Телефон">
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-xs-12">
-                            <button class="yellow_button">ПЕРЕЗВОНИТЕ МНЕ</button>
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                </ul>
-                
-                <p>Оставьте свой контактный номер телефона и мы перезвоним Вам в течение 15 минут.</p>
-
-              </form>
-
-              
- 
-            </div>
-
-            <div id="entry_e_mail" class="pattern_read">
-              <div class="box-modal_close arcticmodal-close">&times;</div>
-              <h4>ЗАДАЙТЕ СВОЙ ВОПРОС</h4>
-
-              <form class="contactform" novalidate>
-                <ul>
-                     <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-12">
-                            <input type="text" placeholder="Имя" required name="cf_name">
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-                        <div class="col-sm-12">
-                            <input type="email" placeholder="E-mail" required name="cf_email" class="txt_field">
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                    <!-- - - - - - - - - - - - - - Form row - - - - - - - - - - - - - - - - -->
-                    <li class="row">
-
-                        <div class="col-xs-12">  
-                            <textarea class="txt_field txt_area" placeholder="Напишете свой вопрос" rows="3" required name="cf_message" data-field-name="Message" data-min-characters="20" ></textarea>
-                            
-                        </div><!--/ [col] -->
-                    </li>
-                    <li class="row">
-                        <div class="col-xs-12">
-                            <button class="yellow_button">задать вопрос</button>
-                        </div><!--/ [col] -->
-                    </li>
-                    <!-- - - - - - - - - - - - - - End of Form row - - - - - - - - - - - - - - - - -->
-                </ul>
-                <p>Напишите нам и мы ответим на любой вопрос в течении 3 часов.</p>
-
-              </form>
-
-              
- 
-            </div>
-
-        </div>
 
         <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
 
@@ -503,15 +325,14 @@
         <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/modernizr.js"></script>
         <script type="text/javascript" src="plugins/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
-        <script type="text/javascript" src="plugins/owl.carousel/owl.carousel.min.js"></script>
         <script type="text/javascript" src="plugins/jquery.cookie.js"></script>
         <script type="text/javascript" src="plugins/jquery.maskedinput.js"></script>
         <script type="text/javascript" src="plugins/classycountdown/js/jquery.knob.js"></script>
         <script type="text/javascript" src="plugins/classycountdown/js/jquery.throttle.js"></script>
         <script type="text/javascript" src="plugins/classycountdown/js/jquery.classycountdown.min.js"></script>
         <script type="text/javascript" src="plugins/onepage-scroll-master/jquery.onepage-scroll.min.js"></script>
-        <script type="text/javascript" src="plugins/jquery.animateNumber.min.js"></script>
         <script type="text/javascript" src="plugins/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="plugins/jquery.form.js"></script>
 
         <!-- Theme files
         ============================================ -->

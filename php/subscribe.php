@@ -1,5 +1,5 @@
 <?php 
-	$user_email = "edbillow@gmail.com";
+	$user_email = "sergey.shamrikov@gmail.com";
 	
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 

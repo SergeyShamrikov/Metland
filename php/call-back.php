@@ -1,6 +1,6 @@
 <?php 
-	$user_email = "pavel.buynovskiy@gmail.com";  
-	//edbillow@gmail.com shamrikov.01@gmail.com
+	$user_email = "edbillow@gmail.com";  
+	
 	if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 		extract($_POST);

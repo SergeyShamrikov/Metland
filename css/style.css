@@ -904,6 +904,12 @@ label.error{
         }
 
 
+    .info_title{
+      display: none;
+      opacity: 0;
+    }
+
+
 
     .pattern_read textarea {
       height: 120px;
@@ -1397,6 +1403,10 @@ label.error{
         .video_play{
             position: relative;
             display: block;
+        }
+
+        .video_play>img{
+          width: 100%;
         }
 
         .video_play:before{
